@@ -1,25 +1,39 @@
 package main
+
 import "fmt"
+
 func main() {
+	var N, i int
+	fmt.Scan(&N)
 
-   var n[50] int
-   fmt.Scan(&n)
+	var animais [50]int
+	var f [100]int
+	var i_f, im int
+	var m [100]int
+	var pares int
+	casado := false
 
-   var descasados[50]int
- //  var des_casa int = 0
-   var pares int = 0
+	for i = 0; i < N; i++ {
+		fmt.Scan(&animais[i])
+		if animais[i] < 0 {
+			i_f++
+			f[i] = animais[i]
+		} else {
+			im++
+			m[i] = animais[i]
+		}
+		for j := 1; j < i_f; j++ {
+			for x := 1; x < im; i++ {
 
-   for i := 0; i <= n; i++{
+				if casado == false && m[x] == (f[j]*-1) {
+					pares++
+					casado = true
+				}
+			}
+		}
 
-    var animal int
-    fmt.Scan(&animal)
-    
-    for j := 0; j < 50; j++{
-        if g == descasados[j*-1]{
-            pares++
-        }else{
-            descasados[i] = g
-        }
-    } 
-   }
+	}
+
+    fmt.Println(pares)
+
 }
