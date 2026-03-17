@@ -15,7 +15,7 @@ Joãozinho sabe o estado inicial dela e os identificadores em ordem das pessoas 
 
 ## Saída
 
-Seu programa deve imprimir uma linha contedo **N-M** inteiros com os identificadores das pessoas que permaneceram na fila, em ordem de chegada.1
+Seu programa deve imprimir uma linha contedo **N-M** inteiros com os identificadores das pessoas que permaneceram na fila, em ordem de chegada.1q
 
 ## Dicas
 

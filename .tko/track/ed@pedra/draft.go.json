@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_01-06-26",
+            "content": "@@ -340,16 +340,63 @@\n edor = i\n+ var a, b int%0A   fmt.Scan(&a, &b)%0A   if a %3E 10 \n %0A       \n@@ -404,19 +404,22 @@\n %7D%0A    %7D%0A\n+  \n  %7D%0A\n+ \n   if ven\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-03-17_01-11-24",
+            "content": "@@ -128,17 +128,17 @@\n or i := \n-0\n+1\n ; i %3C N;\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-17_01-12-37",
+            "content": "@@ -355,55 +355,8 @@\n   %7D%0A\n-    %7Delse%7B%0A        fmt.Println(%22sem ganhador%22)%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-17_01-15-47",
+            "content": "@@ -351,16 +351,63 @@\n       %7D%0A\n+    %7Delse%7B%0A        fmt.Println(%22sem ganhador%22)%0A\n     %7D%0A %7D\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-03-17_01-16-17",
+            "content": "@@ -60,16 +60,24 @@\n    var N\n+, m_pont\n  int%0A   \n@@ -119,32 +119,8 @@\n  -1%0A\n-   var m_pont int = 1000\n %0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-17_01-18-44",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\nfunc main() {\n   var N int\n   fmt.Scan(&N)\n\n   var vencedor int = -1\n   var m_pont int = 1000\n   for i := 0; i < N; i++{\n    var a, b float64\n    fmt.Scan(&a, &b)\n    if a >= 10 && b >= 10{\n        var pont int = int(math.Abs(a-b))\n        \n        if pont < m_pont {\n            m_pont = pont\n            vencedor = i\n        }\n    }\n }\n  if vencedor == -1{\n    fmt.Println(\"sem ganhador\")\n   }else{\n    fmt.Println(vencedor)\n   }\n}\n",
+            "lines": "29"
+        }
+    ]
+}

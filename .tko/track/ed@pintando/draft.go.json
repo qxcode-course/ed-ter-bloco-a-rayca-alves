@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-15_12-51-07",
+            "content": "@@ -121,23 +121,21 @@\n / 2%0A\n-    var area = \n+%09fmt.Println(\n math\n@@ -176,34 +176,8 @@\n  c))\n-%0A%09fmt.Println(%22%25.2f%22, area\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-15_12-54-35",
+            "content": "@@ -70,10 +70,10 @@\n loat\n-32\n+64\n %0A%09fm\n@@ -188,16 +188,24 @@\n Println(\n+%22%25.2f%22, \n area)%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-15_12-55-16",
+            "content": "@@ -70,10 +70,10 @@\n loat\n-64\n+32\n %0A%09fm\n@@ -185,16 +185,18 @@\n mt.Print\n+ln\n (area)%0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-15_12-56-11",
+            "content": "@@ -134,16 +134,8 @@\n rea \n-float64 \n = ma\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-15_12-56-31",
+            "content": "@@ -99,24 +99,16 @@\n %0A%09var s \n-float64 \n = (a + b\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-15_12-56-43",
+            "content": "@@ -99,16 +99,24 @@\n %0A%09var s \n+float64 \n = (a + b\n@@ -205,18 +205,9 @@\n rint\n-f(%22%25.2f%22, \n+(\n area\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-15_12-59-33",
+            "content": "@@ -204,10 +204,8 @@\n %25.2f\n-%5Cn\n %22, a\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-15_12-59-46",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar a, b, c float64\n\tfmt.Scan(&a, &b, &c)\n\n\tvar s = (a + b + c) / 2\n    var area float64 = math.Sqrt(s * (s - a) * (s - b) * (s - c))\n\tfmt.Printf(\"%.2f\\n\", area)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

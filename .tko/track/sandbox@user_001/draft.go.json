@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-11_13-50-27",
+            "content": "@@ -54,19 +54,15 @@\n ln(%22\n-hello world\n+qxcode\n %22)%0A%7D\n+%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-11_13-52-28",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n fmt.Prin\n@@ -68,51 +68,5 @@\n d%22)%0A\n-%0A%09var a = 5%0A%09var b = 6%0A%0A%09fmt.Println(a + b)%0A%0A%7D%0A\n+%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-11_13-57-45",
+            "content": "@@ -18,33 +18,13 @@\n ort \n-(%0A    %22fmt%22%0A    %22math%22%0A) \n+%22fmt%22\n %0A%0Afu\n@@ -112,52 +112,6 @@\n b)%0A%0A\n-    cons n = 50%0A%0A    fmt.Println(math.Sin(n))%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-11_14-00-45",
+            "content": "@@ -20,24 +20,30 @@\n t (%0A\n-%09\n+    \n %22fmt%22%0A\n-%09\n+    \n %22math%22%0A)\n %0A%0Aco\n@@ -42,154 +42,119 @@\n h%22%0A)\n-%0A%0Aconst s string = %22constant%22%0A%0Afunc main() %7B%0A%09fmt.Println(s)%0A%0A%09const n = 500000000%0A%0A%09const d = 3e20 / n%0A%09fmt.Println(d)%0A%0A%09fmt.Println(int64(d))%0A%0A%09\n+ %0A%0Afunc main() %7B%0A%09fmt.Println(%22hello world%22)%0A%0A%09var a = 5%0A%09var b = 6%0A%0A%09fmt.Println(a + b)%0A%0A    cons n = 50%0A%0A    \n fmt.\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-11_14-01-39",
+            "content": "@@ -107,16 +107,84 @@\n t n = 50\n+0000000%0A%0A%09const d = 3e20 / n%0A%09fmt.Println(d)%0A%0A%09fmt.Println(int64(d))\n %0A%0A%09fmt.P\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-11_14-03-05",
+            "content": "@@ -20,36 +20,8 @@\n t (%0A\n-%09%22bytes%22%0A%09%22encoding/base64%22%0A\n %09%22fm\n@@ -29,1411 +29,116 @@\n %22%0A%09%22\n-i\n ma\n-ge%22%0A%09%22image/png%22%0A)%0A%0Avar favicon = %5B%5Dbyte%7B%0A%090x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0x00, 0x00, 0x00, 0x0d, 0x49, 0x48, 0x44, 0x52, 0x00, 0x00, 0x00,%0A%090x10, 0x00, 0x00, 0x00, 0x0f, 0x04, 0x03, 0x00, 0x00, 0x00, 0x1f, 0x5d, 0x52, 0x1c, 0x00, 0x00, 0x00, 0x0f, 0x50,%0A%090x4c, 0x54, 0x45, 0x7a, 0xdf, 0xfd, 0xfd, 0xff, 0xfc, 0x39, 0x4d, 0x52, 0x19, 0x16, 0x15, 0xc3, 0x8d, 0x76, 0xc7,%0A%090x36, 0x2c, 0xf5, 0x00, 0x00, 0x00, 0x40, 0x49, 0x44, 0x41, 0x54, 0x08, 0xd7, 0x95, 0xc9, 0xd1, 0x0d, 0xc0, 0x20,%0A%090x0c, 0x03, 0xd1, 0x23, 0x5d, 0xa0, 0x49, 0x17, 0x20, 0x4c, 0xc0, 0x10, 0xec, 0x3f, 0x53, 0x8d, 0xc2, 0x02, 0x9c,%0A%090xfc, 0xf1, 0x24, 0xe3, 0x31, 0x54, 0x3a, 0xd1, 0x51, 0x96, 0x74, 0x1c, 0xcd, 0x18, 0xed, 0x9b, 0x9a, 0x11, 0x85,%0A%090x24, 0xea, 0xda, 0xe0, 0x99, 0x14, 0xd6, 0x3a, 0x68, 0x6f, 0x41, 0xdd, 0xe2, 0x07, 0xdb, 0xb5, 0x05, 0xca, 0xdb,%0A%090xb2, 0x9a, 0xdd, 0x00, 0x00, 0x00, 0x00, 0x49, 0x45, 0x4e, 0x44, 0xae, 0x42, 0x60, 0x82,%0A%7D%0A%0A// displayImage renders an image to the playground's console by%0A// base64-encoding the encoded image and printing it to stdout%0A// with the prefix %22IMAGE:%22.%0Afunc displayImage(m image.Image) %7B%0A%09var buf bytes.Buffer%0A%09err := png.Encode(&buf, m)%0A%09if err != nil %7B%0A%09%09panic(err)%0A%09%7D%0A%09fmt.Println(%22IMAGE:%22 + base64.StdEncoding.EncodeToString(buf.Bytes()))%0A%7D%0A%0Afunc main() %7B%0A%09m, err := png.Decode(bytes.NewReader(favicon))%0A%09if err != nil %7B%0A%09%09panic(err)%0A%09%7D%0A%09displayImage(m\n+th%22%0A)%0A%0Aconst s string = %22constant%22%0A%0Afunc main() %7B%0A%09fmt.Println(s)%0A%0A%09const n = 50%0A%0A%09fmt.Println(math.Sin(n)\n )%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-11_14-06-28",
+            "content": "@@ -18,106 +18,1450 @@\n ort \n-%0A    %22fmt%22%0A%0Afunc main()%7B%0A     i := 1%0A    for i %3C= 3 %7B%0A        fmt.Println(i)%0A        i = i + 1%0A    %7D%0A%7D\n+(%0A%09%22bytes%22%0A%09%22encoding/base64%22%0A%09%22fmt%22%0A%09%22image%22%0A%09%22image/png%22%0A)%0A%0Avar favicon = %5B%5Dbyte%7B%0A%090x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0x00, 0x00, 0x00, 0x0d, 0x49, 0x48, 0x44, 0x52, 0x00, 0x00, 0x00,%0A%090x10, 0x00, 0x00, 0x00, 0x0f, 0x04, 0x03, 0x00, 0x00, 0x00, 0x1f, 0x5d, 0x52, 0x1c, 0x00, 0x00, 0x00, 0x0f, 0x50,%0A%090x4c, 0x54, 0x45, 0x7a, 0xdf, 0xfd, 0xfd, 0xff, 0xfc, 0x39, 0x4d, 0x52, 0x19, 0x16, 0x15, 0xc3, 0x8d, 0x76, 0xc7,%0A%090x36, 0x2c, 0xf5, 0x00, 0x00, 0x00, 0x40, 0x49, 0x44, 0x41, 0x54, 0x08, 0xd7, 0x95, 0xc9, 0xd1, 0x0d, 0xc0, 0x20,%0A%090x0c, 0x03, 0xd1, 0x23, 0x5d, 0xa0, 0x49, 0x17, 0x20, 0x4c, 0xc0, 0x10, 0xec, 0x3f, 0x53, 0x8d, 0xc2, 0x02, 0x9c,%0A%090xfc, 0xf1, 0x24, 0xe3, 0x31, 0x54, 0x3a, 0xd1, 0x51, 0x96, 0x74, 0x1c, 0xcd, 0x18, 0xed, 0x9b, 0x9a, 0x11, 0x85,%0A%090x24, 0xea, 0xda, 0xe0, 0x99, 0x14, 0xd6, 0x3a, 0x68, 0x6f, 0x41, 0xdd, 0xe2, 0x07, 0xdb, 0xb5, 0x05, 0xca, 0xdb,%0A%090xb2, 0x9a, 0xdd, 0x00, 0x00, 0x00, 0x00, 0x49, 0x45, 0x4e, 0x44, 0xae, 0x42, 0x60, 0x82,%0A%7D%0A%0A// displayImage renders an image to the playground's console by%0A// base64-encoding the encoded image and printing it to stdout%0A// with the prefix %22IMAGE:%22.%0Afunc displayImage(m image.Image) %7B%0A%09var buf bytes.Buffer%0A%09err := png.Encode(&buf, m)%0A%09if err != nil %7B%0A%09%09panic(err)%0A%09%7D%0A%09fmt.Println(%22IMAGE:%22 + base64.StdEncoding.EncodeToString(buf.Bytes()))%0A%7D%0A%0Afunc main() %7B%0A%09m, err := png.Decode(bytes.NewReader(favicon))%0A%09if err != nil %7B%0A%09%09panic(err)%0A%09%7D%0A%09displayImage(m)%0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-11_14-14-40",
+            "content": "@@ -14,16 +14,21 @@\n %0Aimport \n+%0A    \n %22fmt%22%0A%0Af\n@@ -41,20 +41,26 @@\n in()\n- \n %7B%0A\n-%09\n+     \n i := 1%0A\n-%09\n+    \n for \n@@ -68,18 +68,24 @@\n  %3C= 3 %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -95,10 +95,16 @@\n (i)%0A\n-%09%09\n+        \n i = \n@@ -113,9 +113,11 @@\n + 1%0A\n-%09\n+    \n %7D%0A%7D\n-%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-11_14-15-20",
+            "content": "@@ -40,10 +40,8 @@\n  %7B%0A%09\n-/*\n i :=\n@@ -92,68 +92,7 @@\n 1%0A%09%7D\n-*/%0A%0A    for j := 0; j %3C 3; j++ %7B%0A        fmt.Println(j)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-11_14-16-27",
+            "content": "@@ -111,17 +111,16 @@\n  := \n-3\n+0\n ; j %3C 3\n-0\n ; j+\n@@ -148,14 +148,8 @@\n ln(j\n-, %22%3C3%22\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-11_14-17-12",
+            "content": "@@ -94,17 +94,20 @@\n 1%0A%09%7D*/%0A%0A\n-%09\n+    \n for j :=\n@@ -124,18 +124,24 @@\n ; j++ %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -148,15 +148,21 @@\n tln(\n+j, \n %22%3C3%22)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-11_14-17-43",
+            "content": "@@ -145,80 +145,8 @@\n 3%22)%0A\n-        for i:= 3; i %3C 30; i++%7B%0A            fmt.Println(%22%3C3%22)%0A        %7D%0A\n %09%7D%0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-11_14-18-37",
+            "content": "@@ -145,16 +145,21 @@\n 3%22)%0A\n-%09%09\n+        \n for i\n- \n := 3\n@@ -175,14 +175,22 @@\n  i++\n- \n %7B%0A\n-%09%09%09\n+            \n fmt.\n@@ -203,17 +203,23 @@\n n(%22%3C3%22)%0A\n-%09%09\n+        \n %7D%0A%09%7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-11_14-18-49",
+            "content": "@@ -132,16 +132,18 @@\n mt.Print\n+ln\n (%22%3C3%22)%0A%09\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-11_14-19-55",
+            "content": "@@ -171,32 +171,34 @@\n + %7B%0A%09%09%09fmt.Print\n+ln\n (%22%3C3%22)%0A%09%09%7D%0A%09%7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-11_14-20-12",
+            "content": "@@ -132,18 +132,16 @@\n mt.Print\n-ln\n (%22%3C3%22)%0A%09\n@@ -187,11 +187,8 @@\n (%22%3C3\n- %3C3\n %22)%0A%09\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-11_14-20-33",
+            "content": "@@ -181,24 +181,27 @@\n mt.Print(%22%3C3\n+ %3C3\n %22)%0A%09%09%7D%0A%09%7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-11_14-20-55",
+            "content": "@@ -30,236 +30,175 @@\n unc \n-plus(a int, b int) int %7B%0A%0A    return a + b%0A%7D%0A%0Afunc plusPlus(a, b, c int) int %7B%0A    return a + b + c%0A%7D%0A%0Afunc main() %7B%0A%0A    res := plus(1, 2)%0A    fmt.Println(%221+2 =%22, res)%0A%0A    res = plusPlus(1, 2, 3)%0A    fmt.Println(%221+2+3 =%22, res)%0A%7D\n+main() %7B%0A%09/*i := 1%0A%09for i %3C= 3 %7B%0A%09%09fmt.Println(i)%0A%09%09i = i + 1%0A%09%7D*/%0A%0A%09for j := 3; j %3C 30; j++ %7B%0A%09%09fmt.Println(%22%3C3%22)%0A%09%09for i := 3; i %3C 30; i++ %7B%0A%09%09%09fmt.Print(%22%3C3%22)%0A%09%09%7D%0A%09%7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-11_14-26-35",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc plus(a int, b int) int {\n\n    return a + b\n}\n\nfunc plusPlus(a, b, c int) int {\n    return a + b + c\n}\n\nfunc main() {\n\n    res := plus(1, 2)\n    fmt.Println(\"1+2 =\", res)\n\n    res = plusPlus(1, 2, 3)\n    fmt.Println(\"1+2+3 =\", res)\n}",
+            "lines": "21"
+        }
+    ]
+}
