@@ -38,3 +38,7 @@
 2026-03-17 14:33:58, MOVE, v:1, k:ed@casais, mode:BACK
 2026-03-17 14:34:18, MOVE, v:1, k:ed@casais, mode:PICK
 2026-03-17 14:34:22, EXEC, v:1, k:ed@casais, mode:FULL, rate:0, size:39
+2026-03-17 14:36:54, MOVE, v:1, k:ed@casais, mode:BACK
+2026-03-17 18:54:02, MOVE, v:1, k:ed@casais, mode:PICK
+2026-03-17 18:54:07, EXEC, v:1, k:ed@casais, mode:FULL, rate:0, size:41
+2026-03-17 18:55:23, MOVE, v:1, k:ed@casais, mode:BACK
