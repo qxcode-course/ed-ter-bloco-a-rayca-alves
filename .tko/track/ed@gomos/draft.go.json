@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_18-51-08",
+            "content": "@@ -80,27 +80,18 @@\n ar Q\n- int%0A   \n+,\n  dire \n-:= %22%22\n+int\n  %0A  \n@@ -223,325 +223,39 @@\n   %7D%0A\n-%0A\n     f\n-or i := Q - 1; i %3E 0; i++%7B%0A        cobra%5Bi%5D = cobra%5Bi-1%5D%0A    %7D%0A%0A    switch dire%7B%0A    case %22L%22:%0A        cobra%5B0%5D.x--%0A    case %22R%22:%0A        cobra%5B0%5D.x++%0A    case %22U%22:%0A        cobra%5B0%5D.y--%0A    case %22D%22:%0A        cobra%5B0%5D.y++%0A    %7D%0A%0A    for _, gomo := range cobra%7B%0A        fmt.Printf(%22%25v, %25v%5Cn%22, gomo.x, gomo.y)%0A    %7D\n+mt.Println(Q, dire, cobra )\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-22_19-08-29",
+            "content": "@@ -516,16 +516,17 @@\n intf(%22%25v\n+,\n  %25v%5Cn%22, \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-22_19-08-46",
+            "content": "@@ -257,18 +257,18 @@\n i %3E 0; i\n---\n+++\n %7B%0A      \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-22_19-09-50",
+            "content": "package main\nimport \"fmt\"\n\ntype Gomo struct{\n    x, y int\n}\nfunc main() {\n    var Q int\n    dire := \"\" \n    fmt.Scan(&Q, &dire)\n\n    cobra := make([]Gomo, Q)\n\n    for i := range cobra {\n        fmt.Scan(&cobra[i].x, &cobra[i].y)\n    }\n\n    for i := Q - 1; i > 0; i--{\n        cobra[i] = cobra[i-1]\n    }\n\n    switch dire{\n    case \"L\":\n        cobra[0].x--\n    case \"R\":\n        cobra[0].x++\n    case \"U\":\n        cobra[0].y--\n    case \"D\":\n        cobra[0].y++\n    }\n\n    for _, gomo := range cobra{\n        fmt.Printf(\"%v %v\\n\", gomo.x, gomo.y)\n    }\n}\n",
+            "lines": "36"
+        }
+    ]
+}
