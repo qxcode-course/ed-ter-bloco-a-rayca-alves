@@ -7,8 +7,43 @@
         },
         {
             "label": "2026-03-22_17-41-18",
-            "content": "package main\nimport \"fmt\"\n\n\nfunc main() {\n    var qtd_album, qtd_possui int\n    fmt.Scan(&qtd_album, &qtd_possui)\n    figurinhas := make([]int, qtd_possui)\n    for i := range figurinhas{\n        fmt.Scan(&figurinhas[i])\n    }\n    fmt.Println(qtd_album, qtd_possui, figurinhas)\n    unicos := make(map[int]bool)\n    repetidos := make([]int, 0, qtd_possui)\n    for _, figura := range figurinhas{\n        if unicos[figura]{\n            repetidos = append(repetidos, figura)\n        }else{\n            unicos[figura] = true\n        }\n    }\n\n    saida := fmt.Sprintf(\"%v\", repetidos)\n    fmt.Println(saida[1 : len(saida)-1])\n\n    faltantes := make([]int, 0, qtd_album)\n    for i := 1; i <= qtd_album; i++{\n        if !unicos[i]{\n            faltantes = append(faltantes, i)\n        }\n    }\n\n    saida_f := fmt.Sprintf(\"%v\", faltantes)\n    fmt.Println(saida[1 : len(saida_f)-1])\n    \n\n}\n",
+            "content": "@@ -103,25 +103,24 @@\n qtd_possui)%0A\n-%0A\n     figurinh\n@@ -215,24 +215,74 @@\n s%5Bi%5D)%0A    %7D%0A\n+    fmt.Println(qtd_album, qtd_possui, figurinhas)\n %0A    unicos \n@@ -347,17 +347,16 @@\n possui)%0A\n-%0A\n     for \n",
             "lines": "37"
+        },
+        {
+            "label": "2026-03-22_17-51-02",
+            "content": "@@ -731,32 +731,34 @@\n     %7D%0A%0A    saida\n+_f\n  := fmt.Sprintf(\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-22_17-51-19",
+            "content": "@@ -803,24 +803,26 @@\n  : len(saida\n+_f\n )-1%5D)%0A    %0A%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-22_17-51-31",
+            "content": "@@ -476,24 +476,25 @@\n     %7D%0A    %7D%0A\n+%0A\n     saida :=\n@@ -739,18 +739,16 @@\n    saida\n-_f\n  := fmt.\n@@ -793,18 +793,16 @@\n ln(saida\n-_f\n %5B1 : len\n@@ -811,10 +811,8 @@\n aida\n-_f\n )-1%5D\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-22_17-52-22",
+            "content": "@@ -526,71 +526,8 @@\n os)%0A\n-    if saida == %22%5B%5D%22%7B%0A        fmt.Println(%22N%22)%0A    %7Delse%7B%0A     \n     \n@@ -563,21 +563,16 @@\n da)-1%5D)%0A\n-    %7D\n %0A    fal\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-03-22_17-55-14",
+            "content": "@@ -845,74 +845,8 @@\n es)%0A\n-        if saida == %22%5B%5D%22%7B%0A        fmt.Println(%22N%22)%0A    %7Delse%7B%0A    \n     \n@@ -890,13 +890,12 @@\n 1%5D)%0A    \n-%7D\n %0A%0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-22_17-56-47",
+            "content": "@@ -841,16 +841,20 @@\n tantes)%0A\n+    \n     if s\n@@ -857,18 +857,16 @@\n if saida\n-_f\n  == %22%5B%5D%22\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-22_17-57-10",
+            "content": "package main\nimport \"fmt\"\n\n\nfunc main() {\n    var qtd_album, qtd_possui int\n    fmt.Scan(&qtd_album, &qtd_possui)\n\n    figurinhas := make([]int, qtd_possui)\n    for i := range figurinhas{\n        fmt.Scan(&figurinhas[i])\n    }\n\n    unicos := make(map[int]bool)\n    repetidos := make([]int, 0, qtd_possui)\n\n    for _, figura := range figurinhas{\n        if unicos[figura]{\n            repetidos = append(repetidos, figura)\n        }else{\n            unicos[figura] = true\n        }\n    }\n    saida := fmt.Sprintf(\"%v\", repetidos)\n    if saida == \"[]\"{\n        fmt.Println(\"N\")\n    }else{\n         fmt.Println(saida[1 : len(saida)-1])\n    }\n    faltantes := make([]int, 0, qtd_album)\n    for i := 1; i <= qtd_album; i++{\n        if !unicos[i]{\n            faltantes = append(faltantes, i)\n        }\n    }\n\n    saida_f := fmt.Sprintf(\"%v\", faltantes)\n    if saida_f == \"[]\"{\n        fmt.Println(\"N\")\n    }else{\n        fmt.Println(saida_f[1 : len(saida_f)-1])\n    }\n\n}\n",
+            "lines": "44"
         }
     ]
 }
