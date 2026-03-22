@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_17-40-42",
+            "content": "@@ -787,18 +787,16 @@\n    saida\n-_f\n  := fmt.\n@@ -859,10 +859,8 @@\n aida\n-_f\n )-1%5D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-22_17-41-18",
+            "content": "package main\nimport \"fmt\"\n\n\nfunc main() {\n    var qtd_album, qtd_possui int\n    fmt.Scan(&qtd_album, &qtd_possui)\n    figurinhas := make([]int, qtd_possui)\n    for i := range figurinhas{\n        fmt.Scan(&figurinhas[i])\n    }\n    fmt.Println(qtd_album, qtd_possui, figurinhas)\n    unicos := make(map[int]bool)\n    repetidos := make([]int, 0, qtd_possui)\n    for _, figura := range figurinhas{\n        if unicos[figura]{\n            repetidos = append(repetidos, figura)\n        }else{\n            unicos[figura] = true\n        }\n    }\n\n    saida := fmt.Sprintf(\"%v\", repetidos)\n    fmt.Println(saida[1 : len(saida)-1])\n\n    faltantes := make([]int, 0, qtd_album)\n    for i := 1; i <= qtd_album; i++{\n        if !unicos[i]{\n            faltantes = append(faltantes, i)\n        }\n    }\n\n    saida_f := fmt.Sprintf(\"%v\", faltantes)\n    fmt.Println(saida[1 : len(saida_f)-1])\n    \n\n}\n",
+            "lines": "37"
+        }
+    ]
+}
