@@ -22,12 +22,12 @@ tasks:
   ed@casais: '{self:1, rate:100, study:65, friend:n, guided:1}'
   ed@baruel: '{self:1, rate:100, study:32, friend:n, guided:1}'
   ed@gomos: '{self:1, rate:100, study:62, friend:n, guided:1}'
+  ed@princesa: '{rate:100}'
 flags:
-  panel: 3
+  panel: 1
   inbox: 1
-  show_panel: 0
-  tasks: 0
+  show_panel: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@apagando
+selected: ed@princesa

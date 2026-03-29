@@ -1,0 +1,209 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-25_00-26-03",
+            "content": "@@ -277,21 +277,8 @@\n +1%5D%0A\n-            %0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-25_00-31-55",
+            "content": "@@ -175,24 +175,27 @@\n := make(\n-%5B\n+map%5Bint\n %5Dint\n-, n\n )%0A%0A    f\n@@ -289,30 +289,8 @@\n     \n-fila = append(fila, m)\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-25_00-44-41",
+            "content": "@@ -307,16 +307,8 @@\n a, m\n-ortos...\n )%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-25_00-45-16",
+            "content": "@@ -306,17 +306,17 @@\n la, \n-fila%5Bm+2%5D\n+mortos...\n )%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-25_00-46-36",
+            "content": "@@ -313,26 +313,9 @@\n a%5Bm+\n-1%0A                \n+2\n %5D)%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-25_00-46-52",
+            "content": "@@ -310,16 +310,33 @@\n fila%5Bm+1\n+%0A                \n %5D)%0A     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-25_00-47-04",
+            "content": "@@ -304,19 +304,18 @@\n fila\n-%5B:m%5D\n , fila%5B\n+m+1\n %5D)%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-25_00-48-15",
+            "content": "@@ -315,16 +315,9 @@\n ila%5B\n-m+2:%5D...\n+%5D\n )%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-25_00-48-43",
+            "content": "@@ -303,18 +303,16 @@\n (fila%5B:m\n-+1\n %5D, fila%5B\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-25_00-53-34",
+            "content": "@@ -179,19 +179,16 @@\n ake(\n-map%5Bint%5Dint\n+%5B%5Dint, n\n )%0A%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-25_00-57-09",
+            "content": "@@ -288,10 +288,8 @@\n     \n-//\n  fil\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-28_19-19-24",
+            "content": "@@ -279,24 +279,27 @@\n %5D%0A          \n+ //\n  fila = appe\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-28_19-20-55",
+            "content": "@@ -362,12 +362,20 @@\n tln(fila\n+, mortos\n )%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-28_19-21-12",
+            "content": "@@ -280,25 +280,24 @@\n %0A           \n- \n fila = appen\n@@ -305,16 +305,18 @@\n (fila%5B:m\n++1\n %5D, fila%5B\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-28_19-21-31",
+            "content": "@@ -315,16 +315,18 @@\n , fila%5Bm\n++2\n :%5D...)%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-28_19-21-41",
+            "content": "@@ -99,17 +99,16 @@\n int, n)%0A\n-%0A\n     for \n@@ -188,24 +188,25 @@\n nt%5Dint)%0A\n+%0A\n     for \n len(fila\n@@ -201,59 +201,54 @@\n for \n-len(fila) %3E 1%7B%0A        mata := (e + 1) %25 len(fila)%0A\n+m := range fila%7B%0A        if fila%5Bm%5D == e%7B%0A    \n     \n@@ -262,15 +262,9 @@\n tos%5B\n-fila%5Be%5D\n+m\n %5D = \n@@ -273,21 +273,22 @@\n la%5Bm\n-ata%5D%0A\n++1%5D%0A  \n         \n fila\n@@ -279,24 +279,26 @@\n %5D%0A          \n+  \n fila = appen\n@@ -306,19 +306,16 @@\n (fila%5B:m\n-ata\n %5D, fila%5B\n@@ -319,13 +319,8 @@\n la%5Bm\n-ata+1\n :%5D..\n@@ -326,17 +326,28 @@\n ..)%0A    \n+ \n-%7D\n+   %7D%0A    %7D%0A\n %0A    fmt\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-28_20-04-52",
+            "content": "@@ -361,30 +361,15 @@\n rint\n-f(%22%5B %25d%3E %5D%5Cn%22, \n+ln(\n fila\n-%5B0%5D\n )%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-28_20-08-06",
+            "content": "@@ -160,18 +160,16 @@\n   %7D%0A%0A   \n-//\n  mortos \n@@ -257,10 +257,8 @@\n     \n-//\n    m\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-28_20-08-56",
+            "content": "@@ -161,25 +161,8 @@\n  %7D%0A%0A\n-    pos := e - 1%0A\n    /\n@@ -235,11 +235,9 @@\n := (\n-pos\n+e\n  + 1\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-28_20-09-35",
+            "content": "@@ -361,24 +361,26 @@\n 1:%5D...)%0A    \n+%7D%0A\n     fmt.Prin\n@@ -408,15 +408,6 @@\n 0%5D)%0A\n-    %7D%0A  %0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-28_20-10-11",
+            "content": "@@ -365,103 +365,8 @@\n ..)%0A\n-        if mata %3E pos %7B%0A%09%09%09pos = (pos + 1) %25 len(fila)%0A%09%09%7D else %7B%0A%09%09%09pos = pos %25 len(fila)%0A%09%09%7D%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-28_20-11-23",
+            "content": "@@ -181,13 +181,10 @@\n %0A   \n- %0A   \n+//\n  mor\n@@ -207,12 +207,11 @@\n int%5D\n-bool\n+int\n )%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-28_20-21-17",
+            "content": "@@ -157,16 +157,38 @@\n %0A    %7D%0A%0A\n+    pos := e - 1%0A    %0A\n     mort\n@@ -248,17 +248,24 @@\n    m\n-orto := e\n+ata := (pos + 1)\n  %25 l\n@@ -274,24 +274,26 @@\n (fila)%0A     \n+//\n    mortos%5Bfi\n@@ -299,178 +299,172 @@\n ila%5B\n-morto%5D%5D = true%0A%0A        f := %5B%5Dint%7B%7D%0A        for _, p := range fila%7B%0A            if !mortos%5Bp%5D%7B%0A                f = app\n+e%5D%5D = fila%5Bmata%5D%0A        fila = append(fila%5B:mata%5D, fila%5Bmata+1:%5D...)%0A        if mata %3E pos %7B%0A%09%09%09pos = (pos + 1) %25 l\n en\n-d\n (f\n-, p)%0A            %7D%0A        %7D%0A        fila = f%0A\n+ila)%0A%09%09%7D else %7B%0A%09%09%09pos = pos %25 len(fila)%0A%09%09%7D\n %0A   \n@@ -481,15 +481,30 @@\n rint\n-ln(\n+f(%22%5B %25d%3E %5D%5Cn%22, \n fila\n+%5B0%5D\n )%0A  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-28_20-35-21",
+            "content": "@@ -217,34 +217,8 @@\n  1%7B%0A\n-        fmt.Println(fila)%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-28_20-36-23",
+            "content": "@@ -156,37 +156,16 @@\n 1%0A    %7D%0A\n-    fmt.Println(fila)\n %0A    mor\n@@ -213,16 +213,42 @@\n a) %3E 1%7B%0A\n+        fmt.Println(fila)%0A\n         \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-28_20-36-45",
+            "content": "@@ -255,13 +255,9 @@\n  := \n-(e-1)\n+e\n  %25 l\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-28_20-37-14",
+            "content": "@@ -160,16 +160,33 @@\n   %7D%0A    \n+fmt.Println(fila)\n %0A    mor\n@@ -215,25 +215,8 @@\n ol)%0A\n-    pos := e - 1%0A\n     \n@@ -256,14 +256,10 @@\n := (\n-pos + \n+e-\n 1) %25\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-28_20-38-55",
+            "content": "@@ -160,34 +160,16 @@\n   %7D%0A    \n-fmt.Println(fila)%0A\n %0A    mor\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-28_20-39-37",
+            "content": "@@ -484,104 +484,8 @@\n  = f\n-%0A        if morto %3E pos %7B%0A%09%09%09pos = (pos + 1) %25 len(fila)%0A%09%09%7D else %7B%0A%09%09%09pos = pos %25 len(fila)%0A%09%09%7D\n %0A%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-03-28_20-41-08",
+            "content": "@@ -590,189 +590,8 @@\n     \n-saida_f := fmt.Sprintf(%22%25v%22, fila)%0A        if saida_f == %22%5B%5D%22%7B%0A            fmt.Println(%22N%22)%0A        %7Delse%7B%0A            fmt.Println(saida_f%5B1 : len(saida_f)-1%5D)%0A        %7D%0A%0A        //\n fmt.\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-28_20-42-36",
+            "content": "@@ -180,18 +180,8 @@\n fila\n-, fila%5Be%5D.\n )%0A%0A \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-28_20-43-26",
+            "content": "@@ -173,15 +173,15 @@\n rint\n-f(%22%25d%3E%22\n+ln(fila\n , fi\n@@ -185,16 +185,17 @@\n  fila%5Be%5D\n+.\n )%0A%0A    m\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-28_20-44-22",
+            "content": "@@ -178,13 +178,8 @@\n (%22%25d\n-%22,%22%25d\n %3E%22, \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-28_20-45-20",
+            "content": "@@ -178,20 +178,16 @@\n (%22%25d\n-, \n+%22,%22\n %25d%3E%22,\n-fila,\n  fil\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-28_20-45-57",
+            "content": "@@ -23,208 +23,8 @@\n mt%22%0A\n-func print(fila %5B%5Dint, pos int) %7B%0A%09fmt.Print(%22%5B %22)%0A%09for i := 0; i %3C len(fila); i++ %7B%0A%09%09if i == pos %7B%0A%09%09%09fmt.Printf(%22%25d%3E %22, fila%5Bi%5D)%0A%09%09%7D else %7B%0A%09%09%09fmt.Printf(%22%25d %22, fila%5Bi%5D)%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(%22%5D%22)%0A%7D%0A\n func\n@@ -33,16 +33,16 @@\n ain() %7B%0A\n+\n     var \n@@ -151,24 +151,64 @@\n  = i+1%0A    %7D\n+%0A    fmt.Printf(%22%25d, %25d%3E%22,fila, fila%5Be%5D)\n %0A%0A    mortos\n@@ -247,16 +247,16 @@\n = e - 1%0A\n+\n     for \n@@ -274,31 +274,8 @@\n  1%7B%0A\n-        print(fila, e)%0A\n     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-28_20-47-30",
+            "content": "@@ -791,20 +791,206 @@\n     \n-print(fila)%0A\n+saida_f := fmt.Sprintf(%22%25v%22, fila)%0A        if saida_f == %22%5B%5D%22%7B%0A            fmt.Println(%22N%22)%0A        %7Delse%7B%0A            fmt.Println(saida_f%5B1 : len(saida_f)-1%5D)%0A        %7D%0A%0A        //fmt.Println(fila)\n %0A   \n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-03-28_20-48-26",
+            "content": "@@ -797,21 +797,16 @@\n int(fila\n-, pos\n )%0A%0A    %7D\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-28_20-48-48",
+            "content": "@@ -450,19 +450,17 @@\n t(fila, \n-pos\n+e\n )%0A      \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-28_20-49-30",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func pri\n@@ -219,17 +219,16 @@\n (%22%5D%22)%0A%7D%0A\n-%0A\n func mai\n@@ -233,17 +233,20 @@\n ain() %7B%0A\n-%09\n+    \n var n, e\n@@ -250,17 +250,20 @@\n , e int%0A\n-%09\n+    \n fmt.Scan\n@@ -272,17 +272,20 @@\n n, &e)%0A%0A\n-%09\n+    \n fila := \n@@ -299,17 +299,21 @@\n int, n)%0A\n-%09\n+%0A    \n for i :=\n@@ -326,21 +326,26 @@\n %3C n; i++\n- \n %7B%0A\n-%09%09\n+        \n fila%5Bi%5D \n@@ -351,18 +351,22 @@\n  = i\n- + 1%0A%09%7D%0A%0A%09\n++1%0A    %7D%0A%0A    \n mort\n@@ -390,17 +390,20 @@\n t%5Dbool)%0A\n-%09\n+    \n pos := e\n@@ -407,18 +407,20 @@\n = e - 1%0A\n-%0A%09\n+    \n for len(\n@@ -428,21 +428,26 @@\n ila) %3E 1\n- \n %7B%0A\n-%09%09\n+        \n print(fi\n@@ -455,19 +455,24 @@\n a, pos)%0A\n-%0A%09%09\n+        \n morto :=\n@@ -494,18 +494,24 @@\n n(fila)%0A\n-%09%09\n+        \n mortos%5Bf\n@@ -534,40 +534,17 @@\n ue%0A%0A\n-%09%09// reconstru%C3%A7%C3%A3o da fila%0A%09%09nova\n+        f\n  := \n@@ -551,18 +551,24 @@\n %5B%5Dint%7B%7D%0A\n-%09%09\n+        \n for _, p\n@@ -581,22 +581,30 @@\n nge fila\n- \n %7B%0A\n-%09%09%09\n+            \n if !mort\n@@ -612,19 +612,27 @@\n s%5Bp%5D\n- \n %7B%0A\n-%09%09%09%09nova\n+                f\n  = a\n@@ -641,26 +641,54 @@\n end(\n-nova\n+f\n , p)%0A\n-%09%09%09%7D%0A%09%09%7D%0A\n+            %7D%0A        %7D%0A        fila = f\n %0A   \n@@ -730,27 +730,27 @@\n  + 1) %25 len(\n-nov\n+fil\n a)%0A%09%09%7D else \n@@ -774,19 +774,19 @@\n len(\n-nov\n+fil\n a)%0A%09%09%7D%0A%0A\n %09%09fi\n@@ -785,29 +785,16 @@\n %09%7D%0A%0A\n-%09%09fila = nova%0A%09%7D%0A%0A%09%0A%09\n+        \n prin\n@@ -806,9 +806,20 @@\n a, pos)%0A\n-%7D\n+%0A    %7D%0A  %0A%7D%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-28_20-53-24",
+            "content": "@@ -490,16 +490,42 @@\n = true%0A%0A\n+%09%09// reconstru%C3%A7%C3%A3o da fila%0A\n %09%09nova :\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-03-28_20-54-01",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc print(fila []int, pos int) {\n\tfmt.Print(\"[ \")\n\tfor i := 0; i < len(fila); i++ {\n\t\tif i == pos {\n\t\t\tfmt.Printf(\"%d> \", fila[i])\n\t\t} else {\n\t\t\tfmt.Printf(\"%d \", fila[i])\n\t\t}\n\t}\n\tfmt.Println(\"]\")\n}\n\nfunc main() {\n\tvar n, e int\n\tfmt.Scan(&n, &e)\n\n\tfila := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfila[i] = i + 1\n\t}\n\n\tmortos := make(map[int]bool)\n\tpos := e - 1\n\n\tfor len(fila) > 1 {\n\t\tprint(fila, pos)\n\n\t\tmorto := (pos + 1) % len(fila)\n\t\tmortos[fila[morto]] = true\n\n\t\tnova := []int{}\n\t\tfor _, p := range fila {\n\t\t\tif !mortos[p] {\n\t\t\t\tnova = append(nova, p)\n\t\t\t}\n\t\t}\n\n        if morto > pos {\n\t\t\tpos = (pos + 1) % len(nova)\n\t\t} else {\n\t\t\tpos = pos % len(nova)\n\t\t}\n\n\t\tfila = nova\n\t}\n\n\t\n\tprint(fila, pos)\n}",
+            "lines": "53"
+        }
+    ]
+}
