@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-29_20-37-49",
+            "content": "@@ -334,32 +334,8 @@\n %7D %0A%0A\n-    novaFila := %5B%5Dint%7B%7D%0A\n     \n@@ -394,21 +394,17 @@\n         \n-novaF\n+f\n ila = ap\n@@ -408,21 +408,17 @@\n  append(\n-novaF\n+f\n ila, f)%0A\n@@ -437,28 +437,8 @@\n   %7D%0A\n-    fila = novaFila%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-29_20-39-56",
+            "content": "@@ -489,154 +489,29 @@\n ila%0A\n-%0A    saida := fmt.Sprintf(%22%25v%22, fila)%0A    if saida == %22%5B%5D%22%7B%0A        fmt.Println(%22N%22)%0A    %7Delse%7B%0A        fmt.Println(saida%5B1 : len(saida)-1%5D)%0A    %7D\n+    fmt.Println(fila)\n %0A%7D%0A%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-29_20-43-16",
+            "content": "@@ -571,10 +571,8 @@\n n(%22N\n-%5Cn\n %22)%0A \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-03-29_20-43-35",
+            "content": "@@ -518,10 +518,8 @@\n (%22%25v\n-%5Cn\n %22, f\n@@ -567,16 +567,18 @@\n intln(%22N\n+%5Cn\n %22)%0A    %7D\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-03-29_20-43-54",
+            "content": "@@ -514,16 +514,18 @@\n intf(%22%25v\n+%5Cn\n %22, fila)\n@@ -632,32 +632,8 @@\n 1%5D)%0A\n-        fmt.Print(%22%5Cn%22)%0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-03-29_20-44-18",
+            "content": "@@ -514,17 +514,16 @@\n intf(%22%25v\n- \n %22, fila)\n@@ -626,16 +626,40 @@\n da)-1%5D)%0A\n+        fmt.Print(%22%5Cn%22)%0A\n     %7D%0A%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-03-29_20-44-49",
+            "content": "@@ -514,16 +514,17 @@\n intf(%22%25v\n+ \n %22, fila)\n@@ -568,17 +568,16 @@\n intln(%22N\n- \n %22)%0A    %7D\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-03-29_20-45-04",
+            "content": "@@ -567,16 +567,17 @@\n intln(%22N\n+ \n %22)%0A    %7D\n@@ -631,31 +631,8 @@\n 1%5D)%0A\n-        fmt.Print(%22 %22)%0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-03-29_20-45-23",
+            "content": "@@ -574,17 +574,8 @@\n N%22)%0A\n-        %0A\n     \n@@ -647,16 +647,14 @@\n rint\n-f\n (%22 %22)%0A\n-%0A\n     \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-03-29_20-46-05",
+            "content": "@@ -633,14 +633,37 @@\n aida\n- \n )-1%5D)\n+%0A        fmt.Printf(%22 %22)\n %0A%0A  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-29_20-46-38",
+            "content": "@@ -541,17 +541,16 @@\n da == %22%5B\n- \n %5D%22%7B%0A    \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-29_20-51-08",
+            "content": "@@ -541,16 +541,17 @@\n da == %22%5B\n+ \n %5D%22%7B%0A    \n@@ -630,18 +630,18 @@\n en(saida\n-)\n  \n+)\n -1%5D)%0A%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-29_20-52-03",
+            "content": "@@ -567,17 +567,16 @@\n intln(%22N\n- \n %22)%0A     \n@@ -640,31 +640,8 @@\n 1%5D)%0A\n-        fmt.Print(%22%5Cn%22)\n %0A   \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-29_20-52-44",
+            "content": "@@ -562,17 +562,18 @@\n mt.Print\n-f\n+ln\n (%22N %22)%0A \n@@ -608,17 +608,18 @@\n mt.Print\n-f\n+ln\n (saida%5B1\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-29_20-57-38",
+            "content": "@@ -656,13 +656,12 @@\n rint\n-ln(%22 \n+(%22%5Cn\n %22)%0A \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-29_20-58-14",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N, M int\n    fmt.Scan(&N)\n    fila := make([]int, N)\n    for i := 0; i < N; i++{\n        fmt.Scan(&fila[i])\n    } \n\n    fmt.Scan(&M)\n    apagado := make(map[int]bool)\n    sair := make([]int, M)\n    for i := 0; i < M; i++{\n        fmt.Scan(&sair[i])\n        apagado[sair[i]] = true\n    } \n\n    novaFila := []int{}\n    for _, f := range fila{\n        if !apagado[f]{\n            novaFila = append(novaFila, f)\n        }\n    }\n    fila = novaFila\n\n    saida := fmt.Sprintf(\"%v\", fila)\n    if saida == \"[]\"{\n        fmt.Printf(\"N \")\n        \n    }else{\n        fmt.Printf(saida[1 : len(saida) -1])\n        fmt.Println(\" \")\n    }\n}\n\n",
+            "lines": "36"
+        }
+    ]
+}
