@@ -15,5 +15,5 @@ func main() {
    for i := 0; i < B; i++{
     fmt.Scan(&buscas[i])
    }
-    fmt.Println(consultas, buscas)
+
 }

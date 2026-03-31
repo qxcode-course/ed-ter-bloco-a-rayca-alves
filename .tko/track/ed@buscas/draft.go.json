@@ -12,8 +12,13 @@
         },
         {
             "label": "2026-03-31_13-46-16",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var C, B int\n   fmt.Scan(&C,&B)\n\n   consultas := make([]string, C)\n   buscas := make([]string, B)\n\n   for i := 0; i < C; i++{\n    fmt.Scan(&consultas[i])\n   }\n   for i := 0; i < B; i++{\n    fmt.Scan(&buscas[i])\n   }\n    fmt.Println(consultas, buscas)\n}\n",
+            "content": "@@ -139,13 +139,8 @@\n B)%0A%0A\n-   %0A%0A\n    f\n",
             "lines": "17"
+        },
+        {
+            "label": "2026-03-31_23-55-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var C, B int\n   fmt.Scan(&C,&B)\n\n   consultas := make([]string, C)\n   buscas := make([]string, B)\n\n   \n\n   for i := 0; i < C; i++{\n    fmt.Scan(&consultas[i])\n   }\n   for i := 0; i < B; i++{\n    fmt.Scan(&buscas[i])\n   }\n    fmt.Println(consultas, buscas)\n}\n",
+            "lines": "19"
         }
     ]
 }

@@ -7,6 +7,18 @@ func rodar( v[]int, r int) []int{
     }
     return  append(v[n-r:], v[:n-r]...)
 }
+func print(v[]int){
+    fmt.Printf("[")
+    saida := fmt.Sprintf("%v", v)
+    if saida == "[]"{
+        fmt.Printf("N")
+    }else{
+        fmt.Printf(" ")
+        fmt.Printf(saida[1 : len(saida) -1])
+        fmt.Printf(" ")
+    }
+    fmt.Println("]")
+}
 func main() {
     var T, R int
     fmt.Scan(&T, &R)
@@ -17,15 +29,5 @@ func main() {
     }
 
     fila := rodar(v,R)    
-    fmt.Print("[")
-    saida := fmt.Sprintf("%v", fila)
-    if saida == "[]"{
-        fmt.Printf("N ")
-        
-    }else{
-        fmt.Printf(" ")
-        fmt.Printf(saida[1 : len(saida) -1])
-        fmt.Printf(" ")
-    }
-    fmt.Println("]")
+    print(fila)
 }
