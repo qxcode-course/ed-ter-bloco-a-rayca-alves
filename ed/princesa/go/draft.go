@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-func print(fila []int, pos int) {
+func print(fila []int, espada int) {
 	fmt.Print("[ ")
 	for i := 0; i < len(fila); i++ {
-		if i == pos {
+		if i == espada {
 			fmt.Printf("%d> ", fila[i])
 		} else {
 			fmt.Printf("%d ", fila[i])
@@ -24,12 +24,12 @@ func main() {
 	}
 
 	mortos := make(map[int]bool)
-	pos := e - 1
+	espada := e - 1
 
 	for len(fila) > 1 {
-		print(fila, pos)
+		print(fila, espada)
 
-		morto := (pos + 1) % len(fila)
+		morto := (espada + 1) % len(fila)
 		mortos[fila[morto]] = true
 
 		nova := []int{}
@@ -39,15 +39,15 @@ func main() {
 			}
 		}
 
-        if morto > pos {
-			pos = (pos + 1) % len(nova)
+        if morto > espada {
+			espada = (espada + 1) % len(nova)
 		} else {
-			pos = pos % len(nova)
+			espada = espada % len(nova)
 		}
 
 		fila = nova
 	}
 
 	
-	print(fila, pos)
+	print(fila, espada)
 }

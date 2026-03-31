@@ -1,0 +1,119 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_00-30-15",
+            "content": "@@ -69,115 +69,24 @@\n n(&T\n-, &R)%0A    v := make(%5B%5Dint, T)%0A%0A    for i := 0; i %3C T; i++%7B%0A        v%5Bi%5D = i+1%0A    %7D%0A%0A    fmt.Println(v)%0A    \n+)%0A%0A    for i := 0\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-31_00-33-58",
+            "content": "@@ -153,59 +153,26 @@\n   %7D%0A\n+%0A\n     \n-rotacao := R %25 T%0A    %0A    v = append(v, rotacao\n+fmt.Println(v\n )%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_00-50-14",
+            "content": "@@ -1,230 +1,34 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var T, R int%0A    fmt.Scan(&T, &R)%0A    v := make(%5B%5Dint, T)%0A%0A    for i := 0; i %3C T; i++%7B%0A        v%5Bi%5D = i+1%0A    %7D%0A    rotacao := R %25 T%0A    %0A    v = append(v%5Brotacao:%5D, v%5B:rotacao%5D...)%0A\n+@@ -206,27 +206,8 @@%0A ao)%250A%0A-\n     \n@@ -45,12 +45,14 @@\n n(v)\n+%250A\n %0A    \n-%0A%7D\n+ \n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-31_00-52-24",
+            "content": "@@ -156,10 +156,8 @@\n %0A   \n-//\n  rot\n@@ -196,17 +196,29 @@\n d(v%5B\n-R:%5D, v%5B:R\n+rotacao:%5D, v%5B:rotacao\n %5D...\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_00-53-19",
+            "content": "@@ -151,16 +151,19 @@\n     %7D%0A  \n+ //\n  rotacao\n@@ -174,14 +174,9 @@\n R %25 \n-len(v)\n+T\n %0A   \n@@ -198,29 +198,17 @@\n d(v%5B\n-rotacao:%5D, v%5B:rotacao\n+R:%5D, v%5B:R\n %5D...\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_00-54-38",
+            "content": "@@ -1,260 +1,48 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var T, R int%0A    fmt.Scan(&T, &R)%0A    v := make(%5B%5Dint, T)%0A%0A    for i := 0; i %3C T; i++%7B%0A        v%5Bi%5D = i+1%0A    %7D%0A   rotacao := (R+1) %25 len(v)%0A    %0A    v = append(v%5Brotacao:%5D, v%5B:rotacao%5D...)%0A    fmt.Println(v)%0A    %0A%7D\n+@@ -164,18 +164,16 @@%0A cao := R%0A-+1%0A  %2525 len(v\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-31_00-55-14",
+            "content": "@@ -1,373 +1,40 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var T, R int%0A    fmt.Scan(&T, &R)%0A    v := make(%5B%5Dint, T)%0A%0A    for i := 0; i %3C T; i\n+@@ -169,9 +169,9 @@%0A = (R%0A--%0A\n ++\n-%7B\n %0A \n-       v%5Bi%5D = i+1%0A    %7D%0A%0A   rotacao := (R-1) %25 len(v)%0A    %0A    v = append(v%5Brotacao:%5D, v%5B:rotacao%5D...)%0A    saida := fmt.Sprintf(%22%25v%22, v)%0A    if saida == %22%5B%5D%22%7B%0A        fmt.Printf(%22N %22)%0A        %0A    %7Delse%7B%0A        fmt.Println(%22 %22)%0A    %7D    %0A%7D\n+1) %2525\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_00-59-08",
+            "content": "@@ -149,17 +149,17 @@\n 1%0A    %7D%0A\n- \n+%0A\n    rotac\n@@ -235,14 +235,24 @@\n %0A   \n+ saida :=\n  fmt.\n-P\n+Sp\n rint\n@@ -262,10 +262,112 @@\n %25v%22, v)%0A\n+    if saida == %22%5B%5D%22%7B%0A        fmt.Printf(%22N %22)%0A        %0A    %7Delse%7B%0A        fmt.Println(%22 %22)%0A    %7D    %0A\n %7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_01-00-53",
+            "content": "@@ -157,33 +157,17 @@\n     \n-if len(v) %3E 0%7B%0A        R \n+rotacao :\n = (R\n@@ -179,25 +179,24 @@\n  len(v)%0A    \n-%7D\n %0A    v = app\n@@ -205,17 +205,29 @@\n d(v%5B\n-R:%5D, v%5B:R\n+rotacao:%5D, v%5B:rotacao\n %5D...\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-31_01-02-00",
+            "content": "@@ -253,12 +253,10 @@\n tf(%22\n- \n %25v\n- \n %22, v\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_01-19-36",
+            "content": "@@ -237,104 +237,8 @@\n ..)%0A\n-%0A    saida := fmt.Sprintf(%22%25v%22, v)%0A    if saida == %22%5B%5D%22%7B%0A        fmt.Printf(%22N%22)%0A    %7Delse%7B%0A    \n     \n@@ -259,16 +259,10 @@\n v %22, v)%0A\n-    %7D%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_01-21-56",
+            "content": "@@ -1,376 +1,67 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var T, R int%0A    fmt.Scan(&T, &R)%0A    v := make(%5B%5Dint, T)%0A%0A    for i := 0; i %3C T; i++%7B%0A        v%5Bi%5D = i+1%0A    %7D%0A    if len(v) %3E 0%7B%0A        R = (R-1) %25 len(v)%0A    %7D%0A    v = append(v%5BR:%5D, v%5B:R%5D...)%0A%0A    saida := fmt.Sprintf(%22%25v%22, v)%0A    if saida == %22%5B%5D%22%7B%0A        fmt.Printf(%22 N %22)%0A    %7Delse%7B%0A        fmt.Printf(%22 %25v %22, saida)%0A    %7D%0A%7D\n+@@ -349,18 +349,16 @@%0A tf(%2522%0A+ %0A %2525v%0A+ %0A %2522, %0A-saida%0A+v%0A )%250A  \n %0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-31_01-23-13",
+            "content": "@@ -320,31 +320,8 @@\n  %22)%0A\n-        fmt.Print(%22 %22)%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_01-23-34",
+            "content": "@@ -312,24 +312,47 @@\n intf(%22 N %22)%0A\n+        fmt.Print(%22 %22)%0A\n     %7Delse%7B%0A \n@@ -375,33 +375,11 @@\n f(%22 \n-%22)%0A        fmt.Printf(%22\n %25v\n+ \n %22, s\n@@ -384,39 +384,16 @@\n  saida)%0A\n-        fmt.Print(%22 %22)%0A\n     %7D%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_01-24-14",
+            "content": "@@ -186,21 +186,10 @@\n = (R\n- - 1 + len(v)\n+-1\n ) %25 \n@@ -195,24 +195,26 @@\n  len(v)%0A    \n+%7D%0A\n     v = appe\n@@ -232,22 +232,16 @@\n %5B:R%5D...)\n-%0A    %7D\n %0A%0A    sa\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-31_01-27-37",
+            "content": "@@ -186,16 +186,25 @@\n = (R - 1\n+ + len(v)\n ) %25 len(\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-31_01-28-54",
+            "content": "@@ -190,17 +190,8 @@\n  - 1\n- + len(v)\n ) %25 \n@@ -197,26 +197,24 @@\n  len(v)%0A    \n-%7D%0A\n     v = appe\n@@ -232,16 +232,22 @@\n %5B:R%5D...)\n+%0A    %7D\n %0A%0A    sa\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-31_01-29-42",
+            "content": "@@ -1,417 +1,48 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var T, R int%0A    fmt.Scan(&T, &R)%0A    v := make(%5B%5Dint, T)%0A%0A    for i := 0; i %3C T; i++%7B%0A        v%5Bi%5D = i+1%0A    %7D%0A    if len(v) %3E 0%7B%0A        R = R %25 len(v)%0A    %7D%0A    v = append(v%5BR:%5D, v%5B:R%5D...)%0A%0A    saida := fmt.Sprintf(%22%25v%22, v)%0A    if saida == %22%5B%5D%22%7B%0A        fmt.Printf(%22 N %22)%0A    %7Delse%7B%0A        fmt.Printf(%22 %22)%0A        fmt.Printf(%22%25v%22, saida)%0A        fmt.Print(%22 %22)%0A    %7D%0A%7D\n+@@ -184,16 +184,14 @@%0A R = %0A-(%0A (R - 1%0A-)%0A  + l\n %0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-31_01-32-15",
+            "content": "@@ -1,43 +1,40 @@\n-package main%0Aimport %22fmt%22%0Af\n+@@ -28,62 +28,146 @@%0A \n unc \n+%0A-\n rodar( v\n %5B%5Din\n@@ -29,18 +29,22 @@\n rodar( v\n-%5B%5D\n+%255B%255D\n int, r i\n@@ -51,112 +51,430 @@\n nt) \n-%5B%5Dint%7B%0A    n := len(v)%0A     if n %3E 0%7B%0A   \n+%255B%255Dint%257B%250A    n := len(v)%250A  %0A+main() %257B%250A    var T, R int%250A    fmt.Scan(&T, &R)%250A    v := make(%255B%255Dint, T)%250A%250A    for i := 0; i %253C T; i++%257B%250A        v%255Bi%255D = i+1%250A    %257D%250A%0A    %0A+ %0A if %0A-n%0A+len(v)%0A  %253E 0%0A@@ -180,17 +180,22 @@%0A\n      \n+%0A-\n r = r %25\n+25\n  n%0A\n-    %7D\n++R = R %2525 len(v)%0A %250A   %0A@@ -205,15 +205,11 @@\n %0A    \n+ %0A-\n return \n- append(v%5Bn-r:%5D, v%5B:n-r%5D...)%0A%7D%0A\n+%0A+v =%0A  app%0A@@ -218,187 +218,177 @@%0A d(v%255B%0A-n-r%0A+R%0A :%255D, v%255B:%0A-n-r%0A+R%0A %255D...)%250A%0A-%257D%250A\n func\n@@ -481,18 +481,22 @@\n  main() \n-%7B%0A\n+%257B%250A\n     var \n@@ -503,17 +503,19 @@\n T, R int\n-%0A\n+%250A\n     fmt.\n@@ -526,17 +526,19 @@\n (&T, &R)\n-%0A\n+%250A\n     v :=\n@@ -547,19 +547,27 @@\n ake(\n-%5B%5D\n+%255B%255D\n int, T)\n-%0A%0A\n+%250A%250A\n     \n@@ -584,18 +584,24 @@\n ; i \n-%3C\n+%253C\n  T; i++\n-%7B%0A\n+%257B%250A\n     \n@@ -609,130 +609,102 @@\n    v\n-%5Bi%5D = i+1%0A    %7D%0A%0A    fila := rodar(v,R)    %0A    fmt.Print(%22%5B%22)%0A    saida := fmt.Sprintf(%22%25v%22, fila)%0A    if saida == %22%5B%5D%22%7B%0A\n+%255Bi%255D = i+1%0A+%250A    saida := fmt.Sprintf(%2522%2525v%2522, v)%250A    if saida == %2522%255B%255D%2522%257B%250A\n     \n@@ -722,34 +722,38 @@\n ntf(\n-%22N %22)%0A        %0A\n+%2522 N %2522)%250A\n     \n-%7D\n+%257D\n else\n-%7B%0A\n+%257B%250A\n     \n@@ -771,83 +771,179 @@\n ntf(\n-saida%5B1 : len(saida) -1%5D)%0A        fmt.Println(%22 %22)%0A    %7D%0A    fmt.Printf(%22%5D%22)%0A%7D\n+%2522 %2522)%0A %250A    %0A-%257D%250A%250A%0A     f%0A-ila := rodar(v,R)%0A+mt.Printf(%2522%2525v%2522, saida)%250A%0A     %0A-%250A%0A     %0A@@ -400,15 +400,18 @@%0A rint%0A-ln(fila)%0A+(%2522 %2522)%250A    %257D%0A %250A%257D%250A\n %0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-31_23-32-19",
+            "content": "@@ -493,17 +493,18 @@\n mt.Print\n-f\n+ln\n (%22 %22)%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-31_23-32-38",
+            "content": "@@ -435,32 +435,8 @@\n se%7B%0A\n-        fmt.Printf(%22 %22)%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-31_23-33-14",
+            "content": "@@ -547,10 +547,9 @@\n rint\n-ln\n+f\n (%22%5D%22\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-03-31_23-33-35",
+            "content": "package main\nimport \"fmt\"\nfunc rodar( v[]int, r int) []int{\n    n := len(v)\n     if n > 0{\n        r = r % n\n    }\n    return  append(v[n-r:], v[:n-r]...)\n}\nfunc main() {\n    var T, R int\n    fmt.Scan(&T, &R)\n    v := make([]int, T)\n\n    for i := 0; i < T; i++{\n        v[i] = i+1\n    }\n\n    fila := rodar(v,R)    \n    fmt.Print(\"[\")\n    saida := fmt.Sprintf(\"%v\", fila)\n    if saida == \"[]\"{\n        fmt.Printf(\"N \")\n        \n    }else{\n        fmt.Printf(\" \")\n        fmt.Printf(saida[1 : len(saida) -1])\n        fmt.Printf(\" \")\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "31"
+        }
+    ]
+}

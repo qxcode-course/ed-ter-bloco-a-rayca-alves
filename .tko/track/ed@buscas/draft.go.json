@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_13-44-10",
+            "content": "@@ -99,16 +99,19 @@\n %5Dstring,\n+ 0,\n  C)%0A   b\n@@ -133,16 +133,19 @@\n %5Dstring,\n+ 0,\n  B)%0A%0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-31_13-45-47",
+            "content": "@@ -243,28 +243,24 @@\n &buscas%5Bi%5D)%0A\n-   %7D\n %0A    fmt.Pri\n@@ -283,10 +283,15 @@\n buscas)%0A\n+   %7D%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-31_13-46-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var C, B int\n   fmt.Scan(&C,&B)\n\n   consultas := make([]string, C)\n   buscas := make([]string, B)\n\n   for i := 0; i < C; i++{\n    fmt.Scan(&consultas[i])\n   }\n   for i := 0; i < B; i++{\n    fmt.Scan(&buscas[i])\n   }\n    fmt.Println(consultas, buscas)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

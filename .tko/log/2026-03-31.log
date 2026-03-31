@@ -1,0 +1,94 @@
+2026-03-31 00:08:55, MOVE, v:1, k:ed@rotacoes, mode:DOWN
+2026-03-31 00:09:02, MOVE, v:1, k:ed@manipulacao, mode:PICK
+2026-03-31 00:09:15, MOVE, v:1, k:ed@manipulacao, mode:BACK
+2026-03-31 00:18:29, MOVE, v:1, k:ed@alternando, mode:DOWN
+2026-03-31 00:22:28, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-03-31 00:22:31, EXEC, v:1, k:ed@apagando, mode:FULL, rate:100
+2026-03-31 00:22:37, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-03-31 00:22:39, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-03-31 00:22:39, EXEC, v:1, k:ed@princesa, mode:FULL, rate:100
+2026-03-31 00:22:43, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-03-31 00:22:49, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-31 00:22:50, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100
+2026-03-31 00:22:55, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-31 00:22:56, MOVE, v:1, k:ed@mumia, mode:PICK
+2026-03-31 00:22:58, EXEC, v:1, k:ed@mumia, mode:FULL, rate:100
+2026-03-31 00:23:09, MOVE, v:1, k:ed@mumia, mode:BACK
+2026-03-31 00:23:10, MOVE, v:1, k:ed@fuga, mode:PICK
+2026-03-31 00:23:11, EXEC, v:1, k:ed@fuga, mode:FULL, rate:100
+2026-03-31 00:23:13, MOVE, v:1, k:ed@fuga, mode:BACK
+2026-03-31 00:23:15, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-03-31 00:23:16, EXEC, v:1, k:ed@pedra, mode:FULL, rate:100
+2026-03-31 00:23:23, MOVE, v:1, k:ed@pedra, mode:BACK
+2026-03-31 00:23:24, MOVE, v:1, k:ed@casais, mode:PICK
+2026-03-31 00:23:25, EXEC, v:1, k:ed@casais, mode:FULL, rate:100
+2026-03-31 00:23:29, MOVE, v:1, k:ed@casais, mode:BACK
+2026-03-31 00:23:31, MOVE, v:1, k:ed@baruel, mode:PICK
+2026-03-31 00:23:32, EXEC, v:1, k:ed@baruel, mode:FULL, rate:100
+2026-03-31 00:23:42, MOVE, v:1, k:ed@baruel, mode:BACK
+2026-03-31 00:23:44, MOVE, v:1, k:ed@baruel, mode:PICK
+2026-03-31 00:23:45, EXEC, v:1, k:ed@baruel, mode:FULL, rate:100
+2026-03-31 00:23:55, EXEC, v:1, k:ed@baruel, mode:FULL, rate:100
+2026-03-31 00:23:57, MOVE, v:1, k:ed@baruel, mode:BACK
+2026-03-31 00:23:59, MOVE, v:1, k:ed@gomos, mode:PICK
+2026-03-31 00:24:00, EXEC, v:1, k:ed@gomos, mode:FULL, rate:100
+2026-03-31 00:24:03, MOVE, v:1, k:ed@gomos, mode:BACK
+2026-03-31 00:30:13, MOVE, v:1, k:ed@rotacoes, mode:PICK
+2026-03-31 00:30:15, EXEC, v:1, k:ed@rotacoes, mode:FULL, size:8, fail:COMP
+2026-03-31 00:30:18, MOVE, v:1, k:ed@rotacoes, mode:BACK
+2026-03-31 00:33:57, MOVE, v:1, k:ed@rotacoes, mode:PICK
+2026-03-31 00:33:58, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:14
+2026-03-31 00:44:23, MOVE, v:1, k:ed@rotacoes, mode:BACK
+2026-03-31 00:50:12, MOVE, v:1, k:ed@rotacoes, mode:PICK
+2026-03-31 00:50:14, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:15
+2026-03-31 00:50:44, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 00:50:44, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 00:52:24, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 00:53:19, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 00:53:20, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0
+2026-03-31 00:54:38, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 00:55:00, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 00:55:00, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 00:55:14, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 00:55:15, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0
+2026-03-31 00:55:35, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 00:55:35, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 00:56:16, MOVE, v:1, k:ed@rotacoes, mode:BACK
+2026-03-31 00:59:07, MOVE, v:1, k:ed@rotacoes, mode:PICK
+2026-03-31 00:59:08, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:22
+2026-03-31 01:00:53, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:15
+2026-03-31 01:02:00, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 01:19:36, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:16
+2026-03-31 01:19:37, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0
+2026-03-31 01:21:56, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:22
+2026-03-31 01:22:42, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:22
+2026-03-31 01:22:42, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:22
+2026-03-31 01:23:13, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:22
+2026-03-31 01:23:34, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:23
+2026-03-31 01:24:14, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:24
+2026-03-31 01:24:16, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0
+2026-03-31 01:27:37, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:24
+2026-03-31 01:27:38, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0
+2026-03-31 01:28:54, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:24
+2026-03-31 01:29:42, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:24
+2026-03-31 01:30:18, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:24
+2026-03-31 01:30:18, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:24
+2026-03-31 01:32:15, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:24
+2026-03-31 13:23:03, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-03-31 13:23:04, EXEC, v:1, k:ed@princesa, mode:FULL, size:53, fail:COMP
+2026-03-31 13:24:55, EXEC, v:1, k:ed@princesa, mode:FULL, rate:100, size:53
+2026-03-31 13:24:56, EXEC, v:1, k:ed@princesa, mode:FULL, rate:100
+2026-03-31 13:24:56, EXEC, v:1, k:ed@princesa, mode:FULL, rate:100
+2026-03-31 13:34:28, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-03-31 13:34:33, MOVE, v:1, k:ed@buscas, mode:DOWN
+2026-03-31 13:34:36, MOVE, v:1, k:ed@buscas, mode:PICK
+2026-03-31 13:44:10, EXEC, v:1, k:ed@buscas, mode:FULL, rate:0, size:18
+2026-03-31 13:45:47, EXEC, v:1, k:ed@buscas, mode:FULL, rate:0, size:18
+2026-03-31 13:46:16, EXEC, v:1, k:ed@buscas, mode:FULL, rate:0, size:17
+2026-03-31 23:28:34, MOVE, v:1, k:ed@rotacoes, mode:PICK
+2026-03-31 23:28:37, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:21
+2026-03-31 23:28:37, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:21
+2026-03-31 23:32:19, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:30
+2026-03-31 23:32:38, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:30
+2026-03-31 23:33:14, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:31
+2026-03-31 23:33:35, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:100, size:31

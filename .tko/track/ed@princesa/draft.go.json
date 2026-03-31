@@ -202,7 +202,17 @@
         },
         {
             "label": "2026-03-28_20-54-01",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc print(fila []int, pos int) {\n\tfmt.Print(\"[ \")\n\tfor i := 0; i < len(fila); i++ {\n\t\tif i == pos {\n\t\t\tfmt.Printf(\"%d> \", fila[i])\n\t\t} else {\n\t\t\tfmt.Printf(\"%d \", fila[i])\n\t\t}\n\t}\n\tfmt.Println(\"]\")\n}\n\nfunc main() {\n\tvar n, e int\n\tfmt.Scan(&n, &e)\n\n\tfila := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfila[i] = i + 1\n\t}\n\n\tmortos := make(map[int]bool)\n\tpos := e - 1\n\n\tfor len(fila) > 1 {\n\t\tprint(fila, pos)\n\n\t\tmorto := (pos + 1) % len(fila)\n\t\tmortos[fila[morto]] = true\n\n\t\tnova := []int{}\n\t\tfor _, p := range fila {\n\t\t\tif !mortos[p] {\n\t\t\t\tnova = append(nova, p)\n\t\t\t}\n\t\t}\n\n        if morto > pos {\n\t\t\tpos = (pos + 1) % len(nova)\n\t\t} else {\n\t\t\tpos = pos % len(nova)\n\t\t}\n\n\t\tfila = nova\n\t}\n\n\t\n\tprint(fila, pos)\n}",
+            "content": "@@ -372,22 +372,19 @@\n %5Dbool)%0A%09\n-espada\n+pos\n  := e - \n@@ -421,22 +421,19 @@\n t(fila, \n-espada\n+pos\n )%0A%0A%09%09mor\n@@ -443,14 +443,11 @@\n := (\n-espada\n+pos\n  + 1\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-03-31_13-23-04",
+            "content": "@@ -44,22 +44,19 @@\n  %5B%5Dint, \n-espada\n+pos\n  int) %7B%0A\n@@ -116,22 +116,19 @@\n if i == \n-espada\n+pos\n  %7B%0A%09%09%09fm\n@@ -623,36 +623,27 @@\n o %3E \n-espada %7B%0A%09%09%09espada = (espada\n+pos %7B%0A%09%09%09pos = (pos\n  + 1\n@@ -674,23 +674,17 @@\n %0A%09%09%09\n-espada = espada\n+pos = pos\n  %25 l\n@@ -730,17 +730,14 @@\n t(fila, \n-espada\n+pos\n )%0A%7D\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-03-31_13-24-55",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc print(fila []int, espada int) {\n\tfmt.Print(\"[ \")\n\tfor i := 0; i < len(fila); i++ {\n\t\tif i == espada {\n\t\t\tfmt.Printf(\"%d> \", fila[i])\n\t\t} else {\n\t\t\tfmt.Printf(\"%d \", fila[i])\n\t\t}\n\t}\n\tfmt.Println(\"]\")\n}\n\nfunc main() {\n\tvar n, e int\n\tfmt.Scan(&n, &e)\n\n\tfila := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfila[i] = i + 1\n\t}\n\n\tmortos := make(map[int]bool)\n\tespada := e - 1\n\n\tfor len(fila) > 1 {\n\t\tprint(fila, espada)\n\n\t\tmorto := (espada + 1) % len(fila)\n\t\tmortos[fila[morto]] = true\n\n\t\tnova := []int{}\n\t\tfor _, p := range fila {\n\t\t\tif !mortos[p] {\n\t\t\t\tnova = append(nova, p)\n\t\t\t}\n\t\t}\n\n        if morto > espada {\n\t\t\tespada = (espada + 1) % len(nova)\n\t\t} else {\n\t\t\tespada = espada % len(nova)\n\t\t}\n\n\t\tfila = nova\n\t}\n\n\t\n\tprint(fila, espada)\n}",
             "lines": "53"
         }
     ]
