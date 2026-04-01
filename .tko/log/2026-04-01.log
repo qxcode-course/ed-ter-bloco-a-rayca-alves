@@ -1,0 +1,12 @@
+2026-04-01 13:11:40, SELF, v:1, k:ed@rotacoes, self:1, rate:100, study:75
+2026-04-01 13:14:23, MOVE, v:1, k:ed@fractais_png, mode:DOWN
+2026-04-01 13:52:24, MOVE, v:1, k:ed@triangulo, mode:DOWN
+2026-04-01 13:52:33, MOVE, v:1, k:ed@triangulo, mode:PICK
+2026-04-01 13:53:21, MOVE, v:1, k:ed@triangulo, mode:BACK
+2026-04-01 13:58:29, MOVE, v:1, k:ed@mdc, mode:DOWN
+2026-04-01 14:06:07, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-04-01 14:06:10, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100, size:23
+2026-04-01 14:07:12, MOVE, v:1, k:ed@mdc, mode:BACK
+2026-04-01 14:08:25, SELF, v:1, k:ed@mdc, self:1, rate:100, study:10, friend:Ana Cecilia e Juliana
+2026-04-01 14:09:20, MOVE, v:1, k:ed@escada, mode:DOWN
+2026-04-01 14:13:40, MOVE, v:1, k:ed@queimada, mode:DOWN
