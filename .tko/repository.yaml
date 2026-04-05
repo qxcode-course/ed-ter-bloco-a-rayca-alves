@@ -28,6 +28,8 @@ tasks:
   ed@triangulo: '{self:1, rate:100, study:34}'
   ed@resto: '{self:1, rate:100, study:50}'
   ed@mdc: '{self:1, rate:100, study:10, friend:Ana Cecilia e Juliana}'
+  ed@escada: '{self:1, rate:100, study:12}'
+  ed@binomiais: '{self:1, rate:100, study:20}'
 flags:
   panel: 1
   inbox: 1
@@ -35,4 +37,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@escada
+selected: ed@vetequals

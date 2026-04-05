@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-05_13-43-41",
+            "content": "@@ -201,60 +201,7 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    fmt.Println(recur(n))\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-05_13-44-30",
+            "content": "@@ -157,27 +157,24 @@\n cur(\n+(\n n-1) + \n-recur\n (n - 3)\n+)\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-05_13-46-21",
+            "content": "package main\nimport \"fmt\"\nfunc recur(n int)int{\n    if n == 1 || n == 2{\n        return 1\n    }else if n == 3{\n        return 2\n    }else{\n        return recur(n-1) + recur(n - 3)\n    } \n}\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    fmt.Println(recur(n))\n}\n",
+            "lines": "17"
+        }
+    ]
+}
