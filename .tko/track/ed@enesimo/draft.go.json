@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-05_19-19-24",
+            "content": "@@ -415,14 +415,14 @@\n imo(\n-2, \n num\n+, 2\n ))%0A%7D\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-05_19-21-19",
+            "content": "package main\nimport \"fmt\"\nfunc eh_primo(x int, div int) bool {\n\t_, _ = x, div\n\tif x > 1{\n\t\tif div == x{\n\t\t\treturn true\n\t\t}else if x%div == 0{\n\t\t\treturn false\n\t\t}else{\n\t\t\treturn eh_primo(x, div+1)\n\t\t}\n\t}else{\n\t\treturn false\n\t}\n}\n\nfunc enesimo(num, n int)int{\n\tif eh_primo(num, 2) {\n\t\tn--\n\t}\n\tif n == 0{\n\t\treturn num\n\t}\n\treturn enesimo(num+1, n)\n}\n\nfunc main() {\n    var num int\n    fmt.Scan(&num)\n\n\tfmt.Println(enesimo(2, num))\n}\n",
+            "lines": "33"
+        }
+    ]
+}

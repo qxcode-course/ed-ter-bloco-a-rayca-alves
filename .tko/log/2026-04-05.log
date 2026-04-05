@@ -53,3 +53,53 @@
 2026-04-05 13:46:55, MOVE, v:1, k:ed@escada, mode:BACK
 2026-04-05 13:47:19, SELF, v:1, k:ed@escada, self:1, rate:100, study:12
 2026-04-05 13:47:31, MOVE, v:1, k:ed@vetequals, mode:DOWN
+2026-04-05 14:08:46, MOVE, v:1, k:ed@vetequals, mode:PICK
+2026-04-05 14:08:47, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:0, size:56
+2026-04-05 14:12:22, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:0, size:56
+2026-04-05 14:13:46, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:0, size:58
+2026-04-05 14:18:22, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:80, size:57
+2026-04-05 14:19:35, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:10, size:57
+2026-04-05 14:21:52, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:80, size:57
+2026-04-05 14:24:06, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:100, size:60
+2026-04-05 14:24:13, MOVE, v:1, k:ed@vetequals, mode:BACK
+2026-04-05 14:24:56, SELF, v:1, k:ed@vetequals, self:1, rate:100, study:40, concept:1
+2026-04-05 14:26:09, MOVE, v:1, k:ed@eh_primo, mode:DOWN
+2026-04-05 14:42:57, MOVE, v:1, k:ed@eh_primo, mode:PICK
+2026-04-05 14:43:00, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:0, size:26
+2026-04-05 14:43:51, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:0, size:26
+2026-04-05 14:46:03, MOVE, v:1, k:ed@eh_primo, mode:BACK
+2026-04-05 14:48:02, MOVE, v:1, k:ed@eh_primo, mode:PICK
+2026-04-05 14:48:05, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:0, size:25
+2026-04-05 14:49:05, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:0, size:25
+2026-04-05 14:51:18, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:0, size:25
+2026-04-05 14:53:07, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:0, size:27
+2026-04-05 14:53:30, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:0, size:26
+2026-04-05 14:55:20, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:0, size:26
+2026-04-05 14:57:44, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:100, size:30
+2026-04-05 14:59:25, MOVE, v:1, k:ed@eh_primo, mode:BACK
+2026-04-05 15:00:01, SELF, v:1, k:ed@eh_primo, self:1, rate:100, study:40
+2026-04-05 15:02:07, MOVE, v:1, k:ed@eh_primo, mode:PICK
+2026-04-05 15:02:09, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:100
+2026-04-05 15:04:03, MOVE, v:1, k:ed@eh_primo, mode:BACK
+2026-04-05 15:04:50, MOVE, v:1, k:ed@enesimo, mode:DOWN
+2026-04-05 16:37:27, MOVE, v:1, k:ed@enesimo, mode:PICK
+2026-04-05 16:37:30, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:0, size:26
+2026-04-05 16:37:30, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:0, size:26
+2026-04-05 17:19:08, MOVE, v:1, k:ed@enesimo, mode:BACK
+2026-04-05 17:24:14, MOVE, v:1, k:ed@fib1, mode:DOWN
+2026-04-05 19:19:22, MOVE, v:1, k:ed@enesimo, mode:PICK
+2026-04-05 19:19:24, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:37, size:33
+2026-04-05 19:21:19, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:100, size:33
+2026-04-05 20:01:41, MOVE, v:1, k:ed@enesimo, mode:BACK
+2026-04-05 20:02:15, SELF, v:1, k:ed@enesimo, self:1, rate:100, study:60
+2026-04-05 20:04:22, MOVE, v:1, k:ed@fib1, mode:PICK
+2026-04-05 20:04:25, EXEC, v:1, k:ed@fib1, mode:FULL, rate:0, size:9
+2026-04-05 20:22:25, EXEC, v:1, k:ed@fib1, mode:FULL, rate:10, size:14
+2026-04-05 20:24:51, EXEC, v:1, k:ed@fib1, mode:FULL, rate:11, size:14
+2026-04-05 20:26:37, EXEC, v:1, k:ed@fib1, mode:FULL, rate:10, size:15
+2026-04-05 20:29:07, EXEC, v:1, k:ed@fib1, mode:FULL, rate:10, size:14
+2026-04-05 20:30:45, EXEC, v:1, k:ed@fib1, mode:FULL, rate:100, size:14
+2026-04-05 20:31:01, MOVE, v:1, k:ed@fib1, mode:BACK
+2026-04-05 20:31:54, SELF, v:1, k:ed@fib1, self:1, rate:100, study:35
+2026-04-05 20:32:25, SELF, v:1, k:ed@fib1, self:1, rate:100, study:35, problem:1
+2026-04-05 20:33:14, SELF, v:1, k:ed@enesimo, self:1, rate:100, study:60

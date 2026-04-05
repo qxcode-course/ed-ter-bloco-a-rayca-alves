@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-05_20-04-25",
+            "content": "@@ -30,20 +30,20 @@\n c recur(\n-n, k\n+x, y\n  int)int\n@@ -51,82 +51,17 @@\n %0A   \n-if n == 1%7B%0A    return 1%0A   %7D%0A   return recur(n,n - k) + recur(n,n - (k+1))\n+ return 1\n %0A%7D%0Af\n@@ -84,12 +84,12 @@\n var \n-n, k\n+x, y\n  int\n@@ -106,41 +106,13 @@\n an(&\n-n, &k)%0A%0A   fmt.Println(recur(n,k)\n+x, &y\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-05_20-22-25",
+            "content": "@@ -97,15 +97,14 @@\n ur(n\n--1, k-1\n+,n - k\n ) + \n@@ -114,13 +114,18 @@\n ur(n\n--1, k\n+,n - (k+1)\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-05_20-24-51",
+            "content": "@@ -83,50 +83,40 @@\n %0A   \n-k = (n - k) +(n - (k+1))%0A   return\n+return recur(n-1, k-1) +\n  recur(n\n , k)\n@@ -111,16 +111,18 @@\n  recur(n\n+-1\n , k)%0A%7D%0Af\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-05_20-26-37",
+            "content": "@@ -83,43 +83,50 @@\n %0A   \n-return recur\n+k = \n (n -\n- 1,\n  k) +\n- k*\n+(n - (k+1))%0A   return\n  recur(n\n  - 2\n@@ -125,12 +125,8 @@\n ur(n\n- - 2\n , k)\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-05_20-29-06",
+            "content": "@@ -60,18 +60,8 @@\n == 1\n- %7C%7C n == 2\n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-05_20-30-44",
+            "content": "package main\nimport \"fmt\"\nfunc recur(n, k int)int{\n   if n == 1 || n == 2{\n    return 1\n   }\n   return recur(n - 1, k) + k* recur(n - 2, k)\n}\nfunc main() {\n   var n, k int\n   fmt.Scan(&n, &k)\n\n   fmt.Println(recur(n,k))\n}\n",
+            "lines": "14"
+        }
+    ]
+}
