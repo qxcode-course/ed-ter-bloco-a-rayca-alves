@@ -10,3 +10,12 @@
 2026-04-01 14:08:25, SELF, v:1, k:ed@mdc, self:1, rate:100, study:10, friend:Ana Cecilia e Juliana
 2026-04-01 14:09:20, MOVE, v:1, k:ed@escada, mode:DOWN
 2026-04-01 14:13:40, MOVE, v:1, k:ed@queimada, mode:DOWN
+2026-04-01 20:32:10, MOVE, v:1, k:ed@resto, mode:DOWN
+2026-04-01 20:42:51, MOVE, v:1, k:ed@resto, mode:PICK
+2026-04-01 20:42:56, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:16
+2026-04-01 20:43:24, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:16
+2026-04-01 20:43:26, EXEC, v:1, k:ed@resto, mode:FULL, rate:0
+2026-04-01 20:43:59, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:14
+2026-04-01 20:47:41, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:16
+2026-04-01 20:48:33, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:16
+2026-04-01 20:49:17, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:17

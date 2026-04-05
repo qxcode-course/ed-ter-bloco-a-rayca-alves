@@ -1,0 +1,119 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-01_20-42-56",
+            "content": "@@ -47,16 +47,24 @@\n %0A    for\n+ num %3E 0\n %7B%0A      \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-01_20-43-24",
+            "content": "@@ -40,16 +40,29 @@\n m int)%7B%0A\n+    for%7B%0A    \n     fmt.\n@@ -76,24 +76,28 @@\n um / 2)%0A    \n+ \n+   \n fmt.Print(nu\n@@ -104,16 +104,20 @@\n m %25 2)%0A%0A\n+    \n     rest\n@@ -123,16 +123,22 @@\n to(num)%0A\n+    %7D%0A\n %7D%0Afunc m\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-01_20-43-59",
+            "content": "@@ -44,29 +44,8 @@\n t)%7B%0A\n-    for num %3E 0%7B%0A    \n     \n@@ -63,20 +63,16 @@\n um / 2)%0A\n-    \n     fmt.\n@@ -95,31 +95,18 @@\n     \n- \n-   num = num / 2%0A    %7D\n+resto(num)\n %0A%7D%0Af\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-01_20-47-41",
+            "content": "@@ -82,21 +82,16 @@\n (num / 2\n-, %22 %22\n )%0A      \n@@ -105,18 +105,16 @@\n rint\n-ln\n (num %25 2\n , %22 \n@@ -113,13 +113,8 @@\n  %25 2\n-, %22 %22\n )%0A%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-01_20-48-33",
+            "content": "@@ -40,33 +40,16 @@\n m int)%7B%0A\n-   num = num / 2%0A\n     for \n@@ -75,20 +75,23 @@\n t.Print(\n- \n num\n+ / 2\n , %22 %22)%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-01_20-49-17",
+            "content": "@@ -164,27 +164,8 @@\n / 2%0A\n-        resto(num)%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-02_15-43-49",
+            "content": "@@ -156,24 +156,43 @@\n m = num / 2%0A\n+        resto(num)%0A\n     %7D%0A%7D%0Afunc\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-02_15-44-21",
+            "content": "@@ -42,26 +42,40 @@\n int)\n-int%7B\n+%7B%0A   num = num / 2\n %0A    \n-i\n f\n+or\n  num \n-==\n+%3E\n  0%7B%0A\n@@ -86,46 +86,91 @@\n     \n-return 0\n+fmt.Print( num, %22 %22)\n %0A    \n-%7D%0A\n     \n-return 1 + resto/10\n+fmt.Println(num %25 2, %22 %22)%0A%0A        num = num / 2%0A    %7D\n %0A%7D%0Af\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-05_11-08-13",
+            "content": "@@ -178,27 +178,6 @@\n um)%0A\n-    fmt.Println(num)%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-05_11-08-56",
+            "content": "@@ -103,21 +103,16 @@\n  + resto\n-(num)\n /10%0A%7D%0Afu\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-05_11-09-20",
+            "content": "@@ -111,12 +111,12 @@\n (num\n+)\n /10\n-)\n %0A%7D%0Af\n@@ -164,16 +164,31 @@\n (&num)%0A%0A\n+    resto(num)%0A\n     fmt.\n@@ -199,18 +199,11 @@\n tln(\n-resto(\n num)\n-)\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-05_11-13-28",
+            "content": "@@ -38,16 +38,19 @@\n num int)\n+int\n %7B%0A    if\n@@ -68,21 +68,22 @@\n         \n-num =\n+return\n  0%0A    %7D\n@@ -87,18 +87,18 @@\n   %7D%0A\n-%0A\n     \n-num =\n+return\n  1 +\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-05_11-14-45",
+            "content": "@@ -38,19 +38,16 @@\n num int)\n-int\n %7B%0A    if\n@@ -65,22 +65,21 @@\n         \n-return\n+num =\n  0%0A    %7D\n@@ -88,14 +88,13 @@\n     \n-return\n+num =\n  1 +\n@@ -108,9 +108,10 @@\n num/\n-2\n+10\n )%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-05_12-11-19",
+            "content": "@@ -94,16 +94,20 @@\n   return\n+ 1 +\n  resto(n\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-05_12-11-45",
+            "content": "@@ -26,19 +26,19 @@\n %0Afunc re\n-cur\n+sto\n (num int\n@@ -99,24 +99,19 @@\n urn \n-1 + recur\n+resto\n (num/\n-10\n+2\n )%0A%7D%0A\n@@ -182,11 +182,11 @@\n n(re\n-cur\n+sto\n (num\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-05_12-13-40",
+            "content": "@@ -87,28 +87,8 @@\n   %7D%0A\n-    fmt.Println(num)\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-05_12-17-12",
+            "content": "@@ -83,16 +83,37 @@\n 0%0A    %7D%0A\n+    fmt.Println(num)%0A\n     retu\n@@ -133,37 +133,16 @@\n num/10)%0A\n-    fmt.Println(num)%0A\n %7D%0Afunc m\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-05_12-17-41",
+            "content": "@@ -47,47 +47,8 @@\n nt%7B%0A\n-    num = num / 2%0A    fmt.Println(num)%0A\n     \n@@ -112,16 +112,37 @@\n num/10)%0A\n+    fmt.Println(num)%0A\n %7D%0Afunc m\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-05_12-18-26",
+            "content": "@@ -51,10 +51,8 @@\n     \n-//\n num \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-05_12-20-07",
+            "content": "@@ -38,17 +38,40 @@\n num int)\n-%7B\n+int%7B%0A    //num = num / 2\n %0A    fmt\n@@ -113,94 +113,50 @@\n     \n-fmt.Print()%0A    %7D%0A    n := num / 2%0A    x := num %25 2%0A%0A    recur(n)%0A    fmt.Println(n, x\n+return 0%0A    %7D%0A    return 1 + recur(num/10\n )%0A%7D%0A\n@@ -209,16 +209,28 @@\n m)%0A%0A    \n+fmt.Println(\n recur(nu\n@@ -231,11 +231,12 @@\n cur(num)\n+)\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-05_12-26-03",
+            "content": "@@ -85,16 +85,28 @@\n %0A       \n+ fmt.Print()\n %0A    %7D%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-05_12-26-21",
+            "content": "@@ -40,16 +40,36 @@\n m int)%7B%0A\n+    fmt.Println(num)\n %0A    if \n@@ -89,15 +89,8 @@\n     \n-return \n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-05_12-26-52",
+            "content": "package main\nimport \"fmt\"\nfunc recur(num int){\n\n    if num == 0{\n       return \n    }\n    n := num / 2\n    x := num % 2\n\n    recur(n)\n    fmt.Println(n, x)\n}\nfunc main() {\n    var num int\n    fmt.Scan(&num)\n\n    recur(num)\n}\n",
+            "lines": "19"
+        }
+    ]
+}
