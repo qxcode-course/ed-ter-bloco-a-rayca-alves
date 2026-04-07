@@ -5,13 +5,23 @@ import (
 	"fmt"
 	"os"
 )
-func is_value(grid[][]rune, l ,c in, value rune)bool{
-	if !value (grid, l, c, '#'){
-
+func is_value(grid[][]rune, l ,c int, value rune)bool{
+	nl := len(grid)
+	nc := len(grid[0])
+	if c < 0 || c >= nc || l < 0 || l >= nl{
+		return false
 	}
+	return grid[l][c] == value
 }
 func burnTrees(grid [][]rune, l, c int) {
-	_, _, _ = mat, l, c
+	if !is_value (grid, l, c, '#'){
+		return
+	}
+	grid[l][c] = 'o'
+	burnTrees(grid, l, c+1)
+	burnTrees(grid, l, c-1)
+	burnTrees(grid, l+1, c)
+	burnTrees(grid, l-1, c)
 	// se estiver fora da matriz, retorne
 	// se o elemento atual não for uma arvore, retorne
 	// queime a arvore colocando o caractere 'o' na posição atual

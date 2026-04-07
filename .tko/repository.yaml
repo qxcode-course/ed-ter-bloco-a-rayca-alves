@@ -28,6 +28,7 @@ tasks:
   ed@triangulo: '{self:1, rate:100, study:34}'
   ed@resto: '{self:1, rate:100, study:50}'
   ed@mdc: '{self:1, rate:100, study:10, friend:Ana Cecilia e Juliana}'
+  ed@queimada: '{self:1, rate:100, study:20, guided:1}'
   ed@eh_primo: '{self:1, rate:100, study:40}'
   ed@enesimo: '{self:1, rate:100, study:60}'
   ed@vetequals: '{self:1, rate:100, study:40, concept:1}'
@@ -35,10 +36,10 @@ tasks:
   ed@binomiais: '{self:1, rate:100, study:20}'
   ed@fib1: '{self:1, rate:100, study:35, problem:1}'
 flags:
-  panel: 1
+  panel: 0
   inbox: 1
   show_panel: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@map_set
+selected: ed@labirinto
