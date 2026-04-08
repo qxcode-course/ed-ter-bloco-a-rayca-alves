@@ -11,7 +11,11 @@ type Pos struct {
 }
 
 func getNeig(p Pos) []Pos {
-	return []Pos{{p.l, p.c - 1}, {p.l - 1, p.c}, {p.l, p.c + 1}, {p.l + 1, p.c}}
+	return []Pos{
+		{p.l, p.c - 1}, 
+		{p.l - 1, p.c}, 
+		{p.l, p.c + 1}, 
+		{p.l + 1, p.c}}
 }
 
 func inside(grid [][]rune, p Pos) bool {
@@ -25,6 +29,7 @@ func match(grid [][]rune, p Pos, value rune) bool {
 // Função recursiva que tenta encontrar o caminho do início ao fim
 func search(grid [][]rune, startPos, endPos Pos) bool {
 	_, _, _ = grid, startPos, endPos
+	
 	return false
 }
 

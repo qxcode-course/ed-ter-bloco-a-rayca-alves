@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-08_00-30-32",
+            "content": "@@ -114,18 +114,40 @@\n 1, k\n- - 1) + k*\n+) + %0A   %0A   %0A   %0A   %0A   %0A   %0A   \n recu\n@@ -156,20 +156,16 @@\n n - 2, k\n- - 2\n )%0A%7D%0Afunc\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-08_00-38-27",
+            "content": "@@ -134,16 +134,20 @@\n n - 2, k\n+ - 2\n )%0A%7D%0Afunc\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-08_00-38-53",
+            "content": "@@ -110,16 +110,20 @@\n n - 1, k\n+ - 1\n ) + k*re\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-08_00-39-10",
+            "content": "@@ -56,16 +56,26 @@\n f n == 1\n+ %7C%7C n == 2\n %7B%0A    re\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-08_00-40-16",
+            "content": "@@ -60,18 +60,8 @@\n == 1\n- %7C%7C n == 2\n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-08_00-40-37",
+            "content": "@@ -89,43 +89,9 @@\n    %7D\n-else if n %3E 3%7B%0A    k = n - k%0A   %7D%0A \n+%0A\n    r\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-08_00-44-44",
+            "content": "@@ -81,16 +81,49 @@\n eturn 1%0A\n+   %7Delse if n %3E 3%7B%0A    k = n - k%0A\n    %7D%0A   \n@@ -164,20 +164,16 @@\n n - 2, k\n- - 1\n )%0A%7D%0Afunc\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-08_00-45-27",
+            "content": "@@ -119,15 +119,9 @@\n ) + \n-(k - 1)\n+k\n *rec\n@@ -131,16 +131,20 @@\n n - 2, k\n+ - 1\n )%0A%7D%0Afunc\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-08_00-48-00",
+            "content": "@@ -115,17 +115,23 @@\n 1, k) + \n-k\n+(k - 1)\n *recur(n\n@@ -163,16 +163,19 @@\n    var n\n+, k\n  int%0A   \n@@ -185,16 +185,20 @@\n .Scan(&n\n+, &k\n )%0A%0A   fm\n@@ -215,15 +215,14 @@\n recur(n,\n- 1\n+k\n ))%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-08_00-50-39",
+            "content": "@@ -90,21 +90,8 @@\n   %7D%0A\n-   n = n - k%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-08_00-52-31",
+            "content": "@@ -132,26 +132,10 @@\n ) + \n-recur(n - 2, k) - \n+k*\n recu\n@@ -143,10 +143,10 @@\n (n -\n-3\n  \n+2\n , k)\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_02-12-21",
+            "content": "@@ -154,16 +154,19 @@\n recur(n \n+-3 \n , k)%0A%7D%0Af\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_02-12-44",
+            "content": "@@ -31,16 +31,19 @@\n  recur(n\n+, k\n  int)int\n@@ -44,16 +44,16 @@\n nt)int%7B%0A\n-\n    if n \n@@ -86,16 +86,30 @@\n  1%0A   %7D%0A\n+   n = n - k%0A \n    retur\n@@ -121,16 +121,19 @@\n ur(n - 1\n+, k\n ) + recu\n@@ -139,16 +139,19 @@\n ur(n - 2\n+, k\n ) - recu\n@@ -158,11 +158,11 @@\n r(n \n-- 4\n+, k\n )%0A%7D%0A\n@@ -205,16 +205,16 @@\n an(&n)%0A%0A\n-\n    fmt.P\n@@ -227,13 +227,16 @@\n (recur(n\n+, 1\n ))%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_02-15-24",
+            "content": "@@ -82,53 +82,8 @@\n n 1%0A\n-   %7D %0A   if n == 3 %7C%7C n == 4%7B%0A      return 2%0A\n    %7D\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-08_02-16-35",
+            "content": "@@ -87,12 +87,11 @@\n   %7D \n-else\n+%0A  \n  if \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-08_02-17-15",
+            "content": "@@ -55,43 +55,8 @@\n n ==\n- 0%7B%0A      return 0%0A   %7Delse if n ==\n  1 %7C\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-08_02-19-21",
+            "content": "@@ -202,17 +202,17 @@\n (n - 2) \n-+\n+-\n  recur(n\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-08_02-21-13",
+            "content": "@@ -202,17 +202,17 @@\n (n - 2) \n--\n++\n  recur(n\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-08_02-25-23",
+            "content": "@@ -23,37 +23,8 @@\n mt%22%0A\n-var vet = make(map%5Bint%5Dint)%0A%0A\n func\n@@ -45,12 +45,8 @@\n nt%7B%0A\n-   %0A\n    i\n@@ -171,62 +171,14 @@\n %0A   \n-if v, c := vet%5Bn%5D; c %7B%0A      return v%0A   %7D%0A   vet%5Bn%5D =\n+return\n  rec\n@@ -221,25 +221,8 @@\n  4)%0A\n-   return vet%5Bn%5D%0A\n %7D%0Afu\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-08_02-31-34",
+            "content": "package main\nimport \"fmt\"\nvar vet = make(map[int]int)\n\nfunc recur(n int)int{\n   \n   if n == 0{\n      return 0\n   }else if n == 1 || n == 2{\n    return 1\n   } else if n == 3 || n == 4{\n      return 2\n   }\n   if v, c := vet[n]; c {\n      return v\n   }\n   vet[n] = recur(n - 1) + recur(n - 2) - recur(n - 4)\n   return vet[n]\n}\nfunc main() {\n   var n int\n   fmt.Scan(&n)\n\n   fmt.Println(recur(n))\n}\n",
+            "lines": "25"
+        }
+    ]
+}

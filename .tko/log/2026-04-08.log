@@ -1,0 +1,26 @@
+2026-04-08 00:24:16, MOVE, v:1, k:ed@fib2, mode:DOWN
+2026-04-08 00:30:27, MOVE, v:1, k:ed@fib2, mode:PICK
+2026-04-08 00:30:32, EXEC, v:1, k:ed@fib2, mode:FULL, rate:7, size:21
+2026-04-08 00:38:27, EXEC, v:1, k:ed@fib2, mode:FULL, rate:5, size:14
+2026-04-08 00:38:53, EXEC, v:1, k:ed@fib2, mode:FULL, rate:5, size:14
+2026-04-08 00:39:10, EXEC, v:1, k:ed@fib2, mode:FULL, rate:5, size:14
+2026-04-08 00:40:16, EXEC, v:1, k:ed@fib2, mode:FULL, rate:2, size:14
+2026-04-08 00:40:37, EXEC, v:1, k:ed@fib2, mode:FULL, rate:5, size:14
+2026-04-08 00:44:44, EXEC, v:1, k:ed@fib2, mode:FULL, rate:5, size:16
+2026-04-08 00:45:27, EXEC, v:1, k:ed@fib2, mode:FULL, rate:5, size:14
+2026-04-08 00:48:00, EXEC, v:1, k:ed@fib2, mode:FULL, rate:5, size:14
+2026-04-08 00:50:39, EXEC, v:1, k:ed@fib2, mode:FULL, rate:7, size:14
+2026-04-08 00:52:31, EXEC, v:1, k:ed@fib2, mode:FULL, rate:5, size:15
+2026-04-08 02:12:13, MOVE, v:1, k:ed@santo, mode:DOWN
+2026-04-08 02:12:16, MOVE, v:1, k:ed@fib2, mode:PICK
+2026-04-08 02:12:21, EXEC, v:1, k:ed@fib2, mode:FULL, rate:5, size:15
+2026-04-08 02:12:44, EXEC, v:1, k:ed@fib2, mode:FULL, rate:5, size:15
+2026-04-08 02:15:24, EXEC, v:1, k:ed@fib2, mode:FULL, rate:5, size:14
+2026-04-08 02:16:35, EXEC, v:1, k:ed@fib2, mode:FULL, rate:95, size:17
+2026-04-08 02:17:15, EXEC, v:1, k:ed@fib2, mode:FULL, rate:95, size:16
+2026-04-08 02:19:21, EXEC, v:1, k:ed@fib2, mode:FULL, rate:95, size:18
+2026-04-08 02:21:13, EXEC, v:1, k:ed@fib2, mode:FULL, rate:10, size:18
+2026-04-08 02:25:23, EXEC, v:1, k:ed@fib2, mode:FULL, rate:95, size:18
+2026-04-08 02:31:34, EXEC, v:1, k:ed@fib2, mode:FULL, rate:100, size:25
+2026-04-08 02:31:59, MOVE, v:1, k:ed@fib2, mode:BACK
+2026-04-08 02:33:05, SELF, v:1, k:ed@fib2, self:1, rate:100, study:47, friend:Ana Vitoria
